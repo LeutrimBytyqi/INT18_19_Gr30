@@ -1,4 +1,21 @@
 
+footer{background-color: rgb(51,0,0);
+			color: rgb(193, 193, 193);
+			font-family: sans-serif;
+			height: 45px;
+			font-size: small;
+		}
+		tr,td{
+		border-width: 5px;
+		border-style: solid;
+		border-color:rgb(54, 6, 6);
+		background-color:rgb(100, 25, 25);
+		height: 90px;
+		width: 90px;
+		text-align: center;
+		font-size: 20px;
+		}
+
 #header{
 	background-color: rgb(141, 25, 25);
  	margin-top: 5px;
@@ -26,11 +43,25 @@
 #pjesa2{
 	background-color:rgb(54, 6, 6);
 	color:white;
-	height:250px;}
+	height:300px;}
 #pjesa3{
-	background-color: rgb(219, 204, 217);
 	height: 500px;
+}	
+#tabelat{
+	background-color: white;
+	margin: -53px 60px;
 }
+#tab1{
+	border-spacing: 142px 0px; /*The border-spacing property sets the distance between the borders of adjacent cells.*/
+	padding-top: 30px;
+}
+.thead{
+	width: 260px;
+	height: 125px;
+	margin-right: 30%;
+}
+
+
 #pjesa4{
 	background-color: rgb(216, 198, 188);
 	height: 400px;
