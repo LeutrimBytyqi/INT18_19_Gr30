@@ -41,7 +41,8 @@ footer{background-color: rgb(51,0,0);
 	font-size: 10pt;
 	float: right;
 	width: 25%;
-	margin-top:-14px;}
+	margin-top:-14px;
+}
 #pjesa2{
 	background-color:rgb(54, 6, 6);
 	color:white;
@@ -92,13 +93,23 @@ div.fund{
 
 
 }		
-h1.fund{
+h2.fund{
 	color:#404a4a;
 	margin-left: 10px;
 
 }
 .hyperlink:hover{
 	color: black;
-	text-decoration: overline;
+	text-decoration: overline;}
+div.fund1{
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+	color: #404a4a;
+	width: 70%;
+	font-size: larger;
+	color: #404a4a;
+	font-family: sans-serif;
+}	
 
 
