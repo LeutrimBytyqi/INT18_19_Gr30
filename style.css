@@ -5,7 +5,7 @@ footer{background-color: rgb(51,0,0);
 			height: 45px;
 			font-size: small;
 		}
-		tr,td{
+		td,tr.figura{
 		border-width: 5px;
 		border-style: solid;
 		border-color:rgb(54, 6, 6);
@@ -59,11 +59,40 @@ footer{background-color: rgb(51,0,0);
 	width: 260px;
 	height: 125px;
 	margin-right: 30%;
+
 }
 
 
 #pjesa4{
-	background-color: rgb(216, 198, 188);
+	background-color: rgba(177, 170, 124, 0.84);
 	height: 400px;
+	
+}
+button{
+	border: none;
+	background-color:#f7f7f7;
+	color:darkblue;
+	width: 80px;
+	height: 30px;
+	margin-top: 15px;
+}
+input.fund{
+	width: 47%;
+	float: left;
+	margin-left: 10px;
+	margin-top: -20px;
+	border: none;
+	height: 20px;
+}
+div.fund{
+	color: rgb(111,128,128);
+	font-family: sans-serif;
+
+
+}		
+h1.fund{
+	color:#404a4a;
+	margin-left: 10px;
+
 }
 
