@@ -23,8 +23,7 @@ footer{background-color: rgb(51,0,0);
    	color: white;
    }
 .logo{
-	font-size: 35px;
-	
+	font-size: 35px;	
 	font-family: Sans-serif;
 	margin-top: 20px;
 	margin-left: 10px;}
@@ -47,24 +46,64 @@ footer{background-color: rgb(51,0,0);
 	background-color:rgb(54, 6, 6);
 	color:white;
 	height:300px;}
+
+/*Fillimi i pjeses se trete*/
 #pjesa3{
-	height: 500px;
-}	
+	height: 400px;
+	background-color: rgb(228, 223, 203);
+}
 #tabelat{
+	width: 88%;
+	height: 27%;
+	padding-top: 3%;
+	margin-right: 6%;
+	margin-left: 6%;
+	margin-top: -55px;
 	background-color: white;
-	margin: -53px 60px;
+	display: -webkit-inline-box;
 }
-#tab1{
-	border-spacing: 142px 0px; /*The border-spacing property sets the distance between the borders of adjacent cells.*/
-	padding-top: 30px;
+.tabela1{
+	background-color: rgb(100, 25, 25);
+	margin-left: 3%;
+	padding-top: 21px;
+	padding-bottom: 87px;
+	padding-left: 96px;
+	padding-right: 95px;
+}	
+.tabela2{
+	margin-left: 32%;
+	background-color: rgb(100, 25, 25);
+	padding-top: 21px;
+	padding-bottom: 87px;
+	padding-left: 99px;
+	padding-right: 95px;
+}	
+.tabela3{
+	margin-left: 131%;
+	background-color: rgb(100, 25, 25);
+	padding-top: 40px;
+	padding-bottom: 69px;
+	padding-left: 99px;
+	padding-right: 95px;
 }
-.thead{
-	width: 260px;
-	height: 125px;
-	margin-right: 30%;
+#permbajtja{
+	width: 88%;
+	height: 9%;
+	padding-top: 15%;
+	margin-right: 6%;
+	margin-left: 6%;
+	background-color: white;
+	display: -webkit-inline-box;
+}
+.teksti{
+	float: top;
+}
+.listat{ 
+	font-size: 15px; 
+	margin-bottom: 10px;
+}
 
-}
-
+/*Perfundimi i pjeses se trete*/	
 
 #pjesa4{
 	background-color: rgba(177, 170, 124, 0.84);
