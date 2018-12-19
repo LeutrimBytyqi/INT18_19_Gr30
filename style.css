@@ -126,7 +126,7 @@ input.fund{
 	border: none;
 	height: 20px;
 }
-div.fund{
+label,div.fund{
 	color: rgb(111,128,128);
 	font-family: sans-serif;
 
