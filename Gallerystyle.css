@@ -17,3 +17,22 @@
         color: hsl(0, 0%, 85%);
         text-decoration: none;
  }
+ .section {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       overflow: hidden;
+     }
+ .video-container {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+ }
+ .images{
+        align-content: center;
+        z-index: 1;
+ }
