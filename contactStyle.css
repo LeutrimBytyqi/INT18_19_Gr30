@@ -18,8 +18,7 @@
   text-decoration: none;
 }
 .hyperlink:hover{
-  color: black;
-  text-decoration: overline;
+  color:  rgb(106, 121, 128);
 }
 div.background{
   height: 800px;
