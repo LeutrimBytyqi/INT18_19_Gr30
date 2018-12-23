@@ -61,4 +61,9 @@
  .images{
         align-content: center;
         z-index: 1;
- }
+     
+    }
+.foto{
+    width: 720px;
+    height: 400px
+}
