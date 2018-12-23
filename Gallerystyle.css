@@ -51,12 +51,6 @@
        height: 400px;
    }
    
-   /* helper css, since we don't have images */
-   .slide1 {background: red;}
-   .slide2 {background: blue;}
-   .slide3 {background: green;}
-   .slide4 {background: purple;}
-   .slide5 {background: pink;}
    
  .images{
         align-content: center;
