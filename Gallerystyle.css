@@ -50,7 +50,10 @@
        width: 720px;
        height: 400px;
    }
+   .hyperlink:hover{
+    color: rgb(106, 121, 128);
    
+   }
    
  .images{
         align-content: center;
