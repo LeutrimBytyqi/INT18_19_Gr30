@@ -24,14 +24,40 @@
        display: flex;
        align-items: center;
        justify-content: center;
+       overflow: hidden;}
+ 
+     #slider {
+       width: 720px;
+       height: 400px;
        overflow: hidden;
-     }
- .video-container {
-       position: absolute;
-       top: 0;
-       left: 0;
-       width: 100%;
- }
+       margin-left: 400px;
+       place-conte
+   }
+   
+   #slider .slides {
+       display: block;
+       width: 6000px;
+       height: 400px;
+       margin: 0;
+       padding:0;
+       
+
+   }
+   
+   #slider .slide {
+       float: left;
+       list-style-type: none;
+       width: 720px;
+       height: 400px;
+   }
+   
+   /* helper css, since we don't have images */
+   .slide1 {background: red;}
+   .slide2 {background: blue;}
+   .slide3 {background: green;}
+   .slide4 {background: purple;}
+   .slide5 {background: pink;}
+   
  .images{
         align-content: center;
         z-index: 1;
