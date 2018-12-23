@@ -19,7 +19,7 @@ footer{background-color: rgb(51,0,0);
 #header{
 	background-color: rgb(141, 25, 25);
  	margin-top: 5px;
-  	height: 100px;
+  	height: 80px;
    	color: white;
    }
 .logo{
@@ -35,6 +35,10 @@ footer{background-color: rgb(51,0,0);
 	color: hsl(0, 0%, 85%);
 	text-decoration: none;
 }
+.hyperlink:hover{
+    color: rgb(106, 121, 128);
+   
+   }
 .posht{
 	font-family:sans-serif;
 	font-size: 10pt;
@@ -137,9 +141,6 @@ h2.fund{
 	margin-left: 10px;
 
 }
-.hyperlink:hover{
-	color: black;
-	text-decoration: overline;}
 div.fund1{
 	float: left;
 	margin-left: 10px;
