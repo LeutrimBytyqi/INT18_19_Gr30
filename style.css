@@ -98,10 +98,9 @@ footer{background-color: rgb(51,0,0);
 	margin-left: 6%;
 	background-color: white;
 	display: -webkit-inline-box;
-	color:black;
 }
 .teksti{
-	float: top;
+	color: black;
 }
 .listat{ 
 	font-size: 15px; 
