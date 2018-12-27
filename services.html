@@ -1,28 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Services</title>
-	<link rel="stylesheet" type="text/css" href="servicesstyle.css">
+
+	<link rel="stylesheet" href="servicesstyle.css">
+    <title>Services</title>
+     <script src="jquery-3.3.1.js"></script>
+        <script>
+        $(function() {
+
+//settings for slider
+var width = 720;
+var animationSpeed = 1000;
+var pause = 3000;
+var currentSlide = 1;
+
+//cache DOM elements
+var $slider = $('#slider');
+var $slideContainer = $('.slides', $slider);
+var $slides = $('.slide', $slider);
+
+var interval;
+
+function startSlider() {
+    interval = setInterval(function() {
+        $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+            if (++currentSlide === $slides.length) {
+                currentSlide = 1;
+                $slideContainer.css('margin-left', 0);
+            }
+        });
+    }, pause);
+}
+function pauseSlider() {
+    clearInterval(interval);
+}
+
+$slideContainer
+    .on('mouseenter', pauseSlider)
+    .on('mouseleave', startSlider);
+
+startSlider();
+
+
+});
+
+        </script>
 </head>
+
 <body>
-	<div id="header">
-		<div style="width: 100%;">
-			<div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="#";> Cultivated School</a></div>
-			<div style="width: 50%; float: right;">
-				<div><a class="hyperlink" href="#">COMPANY</a></div>
-				<div><a class="hyperlink" href="#">SERVICES</a></div>
-				<div><a class="hyperlink" href="#">PRODUCTS</a></div>
-				<div><a class="hyperlink" href="#">GALLERY</a></div>
+<<<<<<< HEAD
+=======
+		<div id="header">
+				<div style="width: 100%;">
+					<div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Cultivated School</a></div>
+					<div style="width: 50%; float: right;">
+						<div><a class="hyperlink" href="Company.html">COMPANY</a></div>
+						<div><a class="hyperlink" href="services.html" style="color: rgb(106, 121, 128);">SERVICES</a></div>
+						<div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
+						<div><a class="hyperlink" href="Gallery.html" >GALLERY</a></div>
+					</div>
+				</div>
 			</div>
-		</div>
-			<div style="width: 40%;color:rgb(193, 193, 193);font-family:helvetica;font-size: 15px; margin-left: 10px;">Free PSD Website Template</div>
-			<div style="width: 50%; float: right;color: rgb(94, 105, 110);">
-				<div class="posht">Idet mollisi eros dis</div>
-			    <div class="posht">Idet mollisi eros dis</div>
-			    <div class="posht">Idet mollisi eros dis</div>
-			    <div class="posht">Idet mollisi eros dis</div>
-	    </div>
-	</div>
 	<div id="pjesa1">
 	    	<h1 style="font-size: 70px; width: 50%;	float: left;">Hope we can help you</h1>
 	    	<img src="motivation.jpg" style="width: 35%; float: left; margin-left: 225px;">
@@ -42,6 +80,32 @@
 			</div>
 		</div>
 	</div>
+>>>>>>> 643d166cc2a961ea02743d7b26ad8cdef5a19ec5
 
+    <div id="header">
+        <div style="width: 100%;">
+            <div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Cultivated School</a></div>
+            <div style="width: 50%; float: right;">
+                <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
+                <div><a class="hyperlink" href="services.html">SERVICES</a></div>
+                <div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
+                <div><a class="hyperlink" href="Gallery.html">GALLERY</a></div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color:rgb(228, 223, 203); height: 400px;">
+    <div>
+            <div id="slider">
+                    <ul class="slides">
+                        <img src="images/miamilogo.png" style="z-index:1;margin-left: 210px; margin-top:90px;position: absolute;width:300px;height: 200px;"> 
+                        <li class="slide slide1"><img class="foto" src="images/45.jpg"></li>
+                        <li class="slide slide2"><img class="foto" src="images/33.jpg"></li>
+                        <li class="slide slide3"><img class="foto" src="images/34.jpg"></li>
+                        <li class="slide slide4"><img class="foto" src="images/23.jpg"></li>
+                        
+                    </ul>
+                </div>
+    </div>
+</div>
 </body>
 </html>

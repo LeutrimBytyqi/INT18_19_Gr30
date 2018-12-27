@@ -1,0 +1,60 @@
+#header{
+  background-color: rgb(141, 25, 25);
+  margin-top: 5px;
+    height: 80px;
+    color: white;
+   }
+.logo{
+  font-size: 40px;  
+  font-family: Sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;}
+.hyperlink{
+  font-size: 20px;
+  float:left;
+  width: 25%;
+  margin-top: 30px;
+  color: hsl(0, 0%, 85%);
+  text-decoration: none;
+}
+.hyperlink:hover{
+  color:  rgb(106, 121, 128);
+}
+div.background{
+  height: 800px;
+  background-color: rgb(228, 223, 203);
+
+}
+footer{background-color: rgb(51,0,0);
+  color: rgb(193, 193, 193);
+  font-family: sans-serif;
+  height: 45px;
+  font-size: small;
+}
+div.map{
+  float: right;
+  margin: 100px 200px 0px 0px;
+}
+div.text{
+  float: left;
+  margin: 130px 0px 0px 390px;
+  color: #4f5b61bf;
+  font-family: 'Avenir LT W01 65', Arial;
+}
+a.email{
+  text-decoration: none;
+  color:  #494a56;
+  font-weight:500;
+}
+a.email:hover{
+  font-weight:700;
+}
+
+
+
+
+
+
+
+
+
