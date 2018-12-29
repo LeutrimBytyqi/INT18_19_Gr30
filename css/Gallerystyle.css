@@ -17,6 +17,19 @@
         color: hsl(0, 0%, 85%);
         text-decoration: none;
  }
+ #ttt{
+    text-align: center;
+    color:#404a4a;
+    font-family: sans-serif;
+ }
+ .tt{
+     text-align: center;
+     color:#404a4a;
+     font-family: sans-serif;
+ }
+.tt:hover{
+     font-weight: 900;
+ }
  .container{
     display: block;
     background-color:rgb(228, 223, 203);
