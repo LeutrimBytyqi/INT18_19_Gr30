@@ -1,3 +1,4 @@
+/*pjesa e nalt headeri*/
 #header{
     background-color: rgb(141, 25, 25);
     margin-top: 5px;
@@ -17,32 +18,39 @@
         color: hsl(0, 0%, 85%);
         text-decoration: none;
  }
+ .hyperlink:hover{
+    color: rgb(106, 121, 128);
+   }
+ /* per foto*/
  #ttt{
     text-align: center;
     color:#404a4a;
     font-family: sans-serif;
  }
- .tt{
+ .texti{
      text-align: center;
      color:#404a4a;
      font-family: sans-serif;
  }
-.tt:hover{
+.texti:hover{
      font-weight: 900;
  }
- .hiden{
+ #hiden1{
      margin: 10px 80px;
      display: none;
  }
- .hiden img{
+ #hiden1 img{
      width: 210px;
      height: 150px;
      padding: 5px;
      transition: 1s;
  }
- .hiden img:hover{
+ #hiden1 img:hover{
      transform: scale(1.1);
  }
+
+ /*foto qe sillen bashk me llogon*/
+
  .container{
     display: block;
     background-color:rgb(228, 223, 203);
@@ -75,10 +83,6 @@
        list-style-type: none;
        width: 720px;
        height: 400px;
-   }
-   .hyperlink:hover{
-    color: rgb(106, 121, 128);
-   
    }
    
  .images{
