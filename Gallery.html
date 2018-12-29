@@ -2,7 +2,9 @@
 <html>
 <head>
 
-	<link rel="stylesheet" href="css/Gallerystyle.css">
+    <link rel="stylesheet" href="css/Gallerystyle.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <title>Gallery</title>
      <script src="js/jquery-3.3.1.js"></script>
         <script>
@@ -45,6 +47,13 @@ startSlider();
 });
 
         </script>
+        <script> 
+                $(document).ready(function(){
+                  $(".tt").click(function(){
+                    $(".hiden").slideToggle("slow"); 
+                  });
+                });
+                </script>
 </head>
 
 <body>
@@ -83,10 +92,25 @@ startSlider();
                 <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
                 <h2 id="ttt">Take a quick tour of our University throw our Gallery webpage</h2>
                 <span><h3 class="tt">Campus</h3></span>
+                <div class="hiden">
+                   <a href="images/c1.jpg" data-lightbox="mygallery"><img src="images/c1.jpg"></a>
+                   <a href="images/c2.jpg" data-lightbox="mygallery"><img src="images/c2.jpg"></a>
+                    <a href="images/c3.jpg" data-lightbox="mygallery"><img src="images/c3.jpg"></a>
+                    <a href="images/c4.jpg" data-lightbox="mygallery"><img src="images/c4.jpg"></a>
+                    <a href="images/c5.jpg" data-lightbox="mygallery"><img src="images/c5.jpg"></a>
+                    <a href="images/c6.jpg" data-lightbox="mygallery"><img src="images/c6.jpg"></a>
+                    <a href="images/c7.jpg" data-lightbox="mygallery"><img src="images/c7.jpg"></a>
+                    <a href="images/c8.jpg" data-lightbox="mygallery"><img src="images/c8.jpg"></a>
+                </div>
                 <span><h3 class="tt">Classes</h3></span>
+                <div class="hiden"></div>
                 <span><h3 class="tt">Frat Houses</h3></span>
+                <div class="hiden"></div>
                 <span><h3 class="tt">Sports Areas</h3></span>
+                <div class="hiden"></div>
                 <span><h3 class="tt">Events</h3></span>
+                <div class="hiden"></div>
+                <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
                 
     </div>
 </div>
