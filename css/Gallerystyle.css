@@ -30,6 +30,19 @@
 .tt:hover{
      font-weight: 900;
  }
+ .hiden{
+     margin: 10px 80px;
+     display: none;
+ }
+ .hiden img{
+     width: 210px;
+     height: 150px;
+     padding: 5px;
+     transition: 1s;
+ }
+ .hiden img:hover{
+     transform: scale(1.1);
+ }
  .container{
     display: block;
     background-color:rgb(228, 223, 203);
