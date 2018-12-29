@@ -48,7 +48,58 @@
  #hiden1 img:hover{
      transform: scale(1.1);
  }
-
+ #hiden2{
+    margin: 10px 80px;
+    display: none;
+}
+#hiden2 img{
+    width: 210px;
+    height: 150px;
+    padding: 5px;
+    transition: 1s;
+}
+#hiden2 img:hover{
+    transform: scale(1.1);
+}
+#hiden3{
+    margin: 10px 80px;
+    display: none;
+}
+#hiden3 img{
+    width: 210px;
+    height: 150px;
+    padding: 5px;
+    transition: 1s;
+}
+#hiden3 img:hover{
+    transform: scale(1.1);
+}
+#hiden4{
+    margin: 10px 80px;
+    display: none;
+}
+#hiden4 img{
+    width: 210px;
+    height: 150px;
+    padding: 5px;
+    transition: 1s;
+}
+#hiden4 img:hover{
+    transform: scale(1.1);
+}
+#hiden5{
+    margin: 10px 80px;
+    display: none;
+}
+#hiden5 img{
+    width: 210px;
+    height: 150px;
+    padding: 5px;
+    transition: 1s;
+}
+#hiden5 img:hover{
+    transform: scale(1.1);
+}
  /*foto qe sillen bashk me llogon*/
 
  .container{
