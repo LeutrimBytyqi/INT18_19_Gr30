@@ -1,5 +1,5 @@
 #header{
-<<<<<<< HEAD
+
     background-color: rgb(141, 25, 25);
     margin-top: 5px;
       height: 80px;
@@ -66,8 +66,7 @@
     }
 .foto{
     width: 720px;
-    height: 400px
-=======
+    height: 400px;
 	background-color: rgb(141, 25, 25);
  	margin-top: 5px;
   	height: 80px;
@@ -124,5 +123,5 @@
 	float: left;
 	height: 90%;
 	margin-left: 10%;
->>>>>>> 643d166cc2a961ea02743d7b26ad8cdef5a19ec5
+
 }
