@@ -22,6 +22,13 @@
     color: rgb(106, 121, 128);
    }
  /* per foto*/
+ #box{
+    width: 800px;
+    padding: 10px;
+    border: 5px solid rgb(141, 25, 25) ;
+    margin-left: 110px; 
+    outline: double;
+ }
  #ttt{
     text-align: center;
     color:#404a4a;
