@@ -33,6 +33,10 @@
     text-align: center;
     color:#404a4a;
     font-family: sans-serif;
+    background-image: none;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
  }
  .texti{
      text-align: center;
