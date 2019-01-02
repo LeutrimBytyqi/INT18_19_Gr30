@@ -174,3 +174,19 @@ canvas{
     background-color: black;
     border: 1px solid black;
 }
+footer{background-color: rgb(51,0,0);
+    color: rgb(193, 193, 193);
+    font-family: sans-serif;
+    height: 45px;
+    font-size: small;
+}
+td,tr.figura{
+border-width: 5px;
+border-style: solid;
+border-color:rgb(54, 6, 6);
+background-color:rgb(100, 25, 25);
+height: 90px;
+width: 90px;
+text-align: center;
+font-size: 20px;
+}
