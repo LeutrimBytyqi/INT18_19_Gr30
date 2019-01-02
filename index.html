@@ -3,6 +3,7 @@
 <head>
 	<title>Miami University</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<style type="text/css">
 		
 	</style>
@@ -179,8 +180,9 @@
 		<div style="width: 65%; height: 15%; float: left; margin-right: 15px; padding-left: 80px; padding-top: 10px;">
 			<label class="fund" style="background-color: rgb(228, 223, 203);width: 50px; padding-top: 3px; padding-bottom: 5px;padding-right: 10px; padding-left: 10px;">Enter your Email to join our mailing list >>
 			</label>
-			<input type="text" name="Email" style="width: 400px; height: 21px; margin-left: 10px;">
-			<button style="width: 40px; height: 27px;margin-left:10px; ">GO</button>
+			<input type="text" name="Email" id="email_join" style="width: 400px; height: 21px; margin-left: 10px;">
+			<button style="width: 40px; height: 27px;margin-left:10px; " onclick="setSession()" id="setSession">GO</button>
+			<p id="message_error"></p>
 		</div>
 	</div>
 	<footer>
@@ -191,6 +193,40 @@
 					Template by OS Templates
 			</div>			
 		</footer>
-	
+	<script>
+		if (typeof(Storage) !== "undefined") {
+		  // Store
+		  //localStorage.setItem("lastname", "Smith");
+		  // Retrieve
+		  document.getElementById("email_join").value = localStorage.getItem("emailJoin");
+		} else {
+		  document.getElementById("email_join").value = "Sorry, your browser does not support Web Storage...";
+		}
+		function validateEmail(email_join) {
+		  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		  return re.test(email_join);
+		}
+
+		function setSession() {
+			var $result = $("#message_error");
+			var email_join = $("#email_join").val();
+			$result.text("");
+
+			if (validateEmail(email_join)) {
+			   try {
+				localStorage.setItem("emailJoin", document.getElementById("email_join").value);
+				alert("Thank you for join us");
+				}
+				catch(error){
+					document.getElementById("message_error").innerHTML = error.message;
+				}
+			} else {
+			   $result.text(email_join + " is not valid :(");
+			   $result.css("color", "red");
+			}
+			return false;
+			
+		}
+	</script>
 </body>
 </html>
