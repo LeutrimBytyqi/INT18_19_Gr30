@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
-    <link rel="stylesheet" href="CompanyStyle.css">
+    <link rel="stylesheet" href="css/CompanyStyle.css">
+    <link rel="stylesheet" type="text/css" href="css/slidesCSS.css">
     <title>Company</title>
 </head>
 
@@ -54,28 +55,22 @@
             </div>
         </section>
     </div>
-    <div id="content">
+   <div id="content">
         <section class="qelia">
             <hr class="vija">
             <div class="teksti">
 
                <h1> Public Institution, Personal Education</h1>
-               <p> Miami University, established in 1809, is a public university located in Oxford, Ohio. Ranked among the top 50 "Best Values in Public Colleges" by Kiplinger, Miami is recognized as one of the nation's most outstanding undergraduate institutions. With a student body of nearly 19,000, Miami effectively combines a wide range of strong academic programs with the personal attention ordinarily found only at much smaller institutions.</p>
+               <p><abbr title="Miami University">MU</abbr>, established in 1809, is a public university located in Oxford, Ohio. Ranked among the top 50 "Best Values in Public Colleges" by Kiplinger, Miami is recognized as one of the nation's most outstanding undergraduate institutions. With a student body of nearly 19,000, Miami effectively combines a wide range of strong academic programs with the personal attention ordinarily found only at much smaller institutions.</p>
             </div>
-            <div class="fotoja">
-                <img src="images/msuset.jpg" class="picture">
-            </div>
-            <hr class="vija">
-        </section>
-        <section class="qelia">
-            <hr class="vija">
-            <div class="teksti">
-            
-               <h1> Public Institution, Personal Education</h1>
-               <p> Miami University, established in 1809, is a public university located in Oxford, Ohio. Ranked among the top 50 "Best Values in Public Colleges" by Kiplinger, Miami is recognized as one of the nation's most outstanding undergraduate institutions. With a student body of nearly 19,000, Miami effectively combines a wide range of strong academic programs with the personal attention ordinarily found only at much smaller institutions.</p>
-            </div>
-            <div class="fotoja">
-                <img src="images/msuset.jpg" class="picture">
+            <div class="w3-content">
+              <img class="mySlides0" src="images/msuset.jpg">
+              <img class="mySlides0" src="images/personal_education.jpg">
+              <img class="mySlides0" src="images/msusi.jpg">
+              <img class="mySlides0" src="images/rrethi.jpg">
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'mySlides0')">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'mySlides0')">&#10095;</button>
             </div>
             <hr class="vija">
         </section>
@@ -83,15 +78,72 @@
             <hr class="vija">
             <div class="teksti">
             
+               <h1>Opportunities for Engagement</h1>
+               <p>Our focus on personal attention is enhanced through the study in selected disciplines by graduate students, who, along with undergraduates, 
+                participate with faculty in significant research and scholarship activities.
+                Miami also offers vibrant residential, community-based, and international programs involving students in life-enhancing activities that build leadership and develop citizenship, 
+                character, and lifelong friendships.</p>
+            </div>
+             <div class="w3-content">
+              <img class="mySlides1" src="images/engagement-opp-graphic.png">
+              <img class="mySlides1" src="images/Place-Branding-Opportunities-for-Engagement-1288x724.jpg">
+              <img class="mySlides1" src="images/download.jpg">
+              <img class="mySlides1" src="images/engagement.jpg">
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'mySlides1')">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'mySlides1')">&#10095;</button>
+            </div>
+
+            <hr class="vija">
+            </section>
+            <section class="qelia">
+            <hr class="vija">
+            <div class="teksti">
+            
                <h1> Public Institution, Personal Education</h1>
-               <p> Miami University, established in 1809, is a public university located in Oxford, Ohio. Ranked among the top 50 "Best Values in Public Colleges" by Kiplinger, Miami is recognized as one of the nation's most outstanding undergraduate institutions. With a student body of nearly 19,000, Miami effectively combines a wide range of strong academic programs with the personal attention ordinarily found only at much smaller institutions.</p>
+               <p>Along with countless opportunities to gain practical experience, Miami is distinguished by a faculty who love to teach and mentor students. 
+                In fact, the 2019 <mark>U.S. News & World Report</mark> rankings recognize Miami as the #3 university in the U.S. in the category of "Strong Commitment to Undergraduate Teaching."
+                We believe that this commitment is also demonstrated in our record of exceptional retention and graduation rates, 
+                which remain some of the highest in NCAA Division I schools.</p>
             </div>
-            <div class="fotoja">
-                <img src="images/msuset.jpg" class="picture">
+            <div class="w3-content">
+              <img class="mySlides2" src="images/teaching.jpg">
+              <img class="mySlides2" src="images/hills_psychology.jpg">
+              <img class="mySlides2" src="images/istock.jpg">
+              <img class="mySlides2" src="images/images.jpg">
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 'mySlides2')">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 'mySlides2')">&#10095;</button>
             </div>
+
+            
+
             <hr class="vija">
         </section>
     </div>
+
+            <script>
+            var slideIndex = 1;
+            var slideCount = 2;
+            for(let i=0;i<=slideCount;i++) {
+                showDivs(slideIndex, ("mySlides" + i));
+            }
+
+            function plusDivs(n, class_name) {
+              showDivs((slideIndex += n), class_name);
+            }
+
+            function showDivs(n, class_name) {
+              var i;
+              var x = document.getElementsByClassName(class_name);
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
 
 </body>
 
