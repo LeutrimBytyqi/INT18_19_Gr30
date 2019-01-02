@@ -113,30 +113,30 @@
 		<br>
 		<div style="float: left;width: 27%">		
 			<h2 class="fund">Why Not Contact Us Today !</h2>
-			<hr style="width:95%;float: left;margin-top: -4px;margin-left: 10px;">
+			<hr style="width:95%; float: left; margin-top: -4px; margin-left: 10px;">
 
 			<br>
 			<div class="fund" style="float: left;margin-left: 10px;margin-top: 15px;">Name:</div>
-		
 			<div class="fund" style="float: left;margin-left: 150px;margin-top: 15px;">Email:</div>
 			<br>
 			<br>
 			<br>
-			<input class="fund" type="text" name="emri">
+			<input class="fund" type="text" name="emri" id="notnull" min="1">
 			<input class="fund" type="text" name="email" id="email">
 			<br>
 			<div class="fund" style="margin-left: 10px;">
 				Message:
 				<br>
 				<textarea style="width: 98%; height: 100px;"></textarea>
-				<button type="submit" value="submit" id="validate" onclick="validate()">Submit</button>
+				<button type="submit" value="submit" id="validate" onclick="nullFunction()">Submit</button>
 				<button type="reset" value="reset" style="margin-left: 10px;">Reset</button>
 				<p id="result"></p>
+				<p id="erorr_message"></p>
 			</div>
 			
 		</div>
 		<div style="width: 22%;float: left;margin-left: 70px;">
-			<h2 class="fund">You can do it</h2>		
+			<h2 class="fund">You can do it</h2>
 			<hr style="width:70%;float: left;margin-top: -4px;margin-left: 10px;">	
 			<br>
 			<div class="fund1">
@@ -196,9 +196,6 @@
 		</footer>
 	<script>
 		if (typeof(Storage) !== "undefined") {
-		  // Store
-		  //localStorage.setItem("lastname", "Smith");
-		  // Retrieve
 		  document.getElementById("email_join").value = localStorage.getItem("emailJoin");
 		} else {
 		  document.getElementById("email_join").value = "Sorry, your browser does not support Web Storage...";
@@ -228,26 +225,35 @@
 			return false;
 		}
 
-		function validateEmail(email) {
-		  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-		  return re.test(email);
-		}
+      function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
 
+      function validate() {
+        var $result = $("#result");
+        var email = $("#email").val();
+        $result.text("");
 
-		function validate() {
-		  var $result = $("#erroree");
-		  var email = $("#email").val();
-		  $result.text("");
-		  console();
-		  if (validateEmail(email)) {
-		    $result.text(email + " is valid");
-			$result.css("color", "red");
-		  } else {
-		    $result.text(email + " is not valid");
-		    $result.css("color", "red");
-		  }
-		  return false;
-		}
+        if (validateEmail(email)) {
+
+        } else {
+          $result.text(email + " is not valid");
+          $result.css("color", "red");
+        }
+        return false;
+      }
+
+      $("#validate").bind("click", validate);
+
+      function nullFunction(){
+      	if (document.getElementById("notnull").validity.rangeUnderflow){
+      		document.getElementById("erorr_message")innerHTML = "afavasc";
+      	} else {
+			document.getElementById("erorr_message")innerHTML = "blablalba";
+      	}
+
+      }
 
 	</script>
 </body>
