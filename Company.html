@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="HTML5_AppCache_LoanCalculator.css" rel="stylesheet" type="text/css" /> 
     <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
     <link rel="stylesheet" href="css/CompanyStyle.css">
     <link rel="stylesheet" type="text/css" href="css/slidesCSS.css">
@@ -172,6 +173,18 @@
               }
               x[slideIndex-1].style.display = "block";  
             }
+            function time(){
+              var today = new Date();
+              var h = today.getHours();
+              if (6<h && h<17) {
+                document.body.style.backgroundColor = 'white';
+              } else {
+                document.body.style.backgroundColor = 'lightblue';
+              }
+              var t = setTimeout(time, 3600);
+            }
+
+            time();
             </script>
 
 </body>
