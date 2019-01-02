@@ -58,15 +58,15 @@
 	<div id="pjesa3">
 		<div id="tabelat">
 			<span class="tabela1">
-				260 X 125
+				<img src="images/1.jpg" style="width: 260px; height: 125px;margin-top: -2%;"> 
 			</span>			
 
 			<span class="tabela2">
-				260 X 125
+				<img src="images/2.jpg" style="width: 260px; height: 125px;margin-top: -2%;">
 			</span>
 
 			<span class="tabela3">
-				260 X 125
+				<img src="images/3.jpg" style="width: 260px; height: 125px;margin-top: -2%;">
 			</span>			
 		</div>
 		<div id="permbajtja">
@@ -93,7 +93,7 @@
 					Condimentumfelos et amet tellent
 					quisquet a leo lacus nex augue.</pre>
 			</div>
-			<div class="teksti" style="margin-top: -223px; margin-left: 167px;">
+			<div class="teksti" style="margin-top: -223px; margin-left: 156px;">
 				<h3 style="">Ipsumsenterdum non velit</h3>
 				<hr style="width:100%;float: left; margin-top: -4px;">
 				<pre class="listat" style="margin-left: -313px; margin-top: 30px; font-size: 14px;">
@@ -118,19 +118,20 @@
 			<br>
 			<div class="fund" style="float: left;margin-left: 10px;margin-top: 15px;">Name:</div>
 		
-			<div class="fund" style="float: left;margin-left: 150px;margin-top: 15px;" >Email:</div>
+			<div class="fund" style="float: left;margin-left: 150px;margin-top: 15px;">Email:</div>
 			<br>
 			<br>
 			<br>
 			<input class="fund" type="text" name="emri">
-			<input class="fund" type="text" name="email">
+			<input class="fund" type="text" name="email" id="email">
 			<br>
 			<div class="fund" style="margin-left: 10px;">
 				Message:
 				<br>
 				<textarea style="width: 98%; height: 100px;"></textarea>
-				<button type="submit" value="submit">Submit</button>
+				<button type="submit" value="submit" id="validate" onclick="validate()">Submit</button>
 				<button type="reset" value="reset" style="margin-left: 10px;">Reset</button>
+				<p id="result"></p>
 			</div>
 			
 		</div>
@@ -181,7 +182,7 @@
 			<label class="fund" style="background-color: rgb(228, 223, 203);width: 50px; padding-top: 3px; padding-bottom: 5px;padding-right: 10px; padding-left: 10px;">Enter your Email to join our mailing list >>
 			</label>
 			<input type="text" name="Email" id="email_join" style="width: 400px; height: 21px; margin-left: 10px;">
-			<button style="width: 40px; height: 27px;margin-left:10px; " onclick="setSession()" id="setSession">GO</button>
+			<button style="width: 40px; height: 27px; margin-left:10px;" onclick="setSession()" id="setSession">GO</button>
 			<p id="message_error"></p>
 		</div>
 	</div>
@@ -226,26 +227,27 @@
 			}
 			return false;
 		}
+
 		function validateEmail(email) {
 		  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 		  return re.test(email);
 		}
 
+
 		function validate() {
-		  var $result = $("#result");
+		  var $result = $("#erroree");
 		  var email = $("#email").val();
 		  $result.text("");
-
+		  console();
 		  if (validateEmail(email)) {
-		    
+		    $result.text(email + " is valid");
+			$result.css("color", "red");
 		  } else {
 		    $result.text(email + " is not valid");
 		    $result.css("color", "red");
 		  }
 		  return false;
 		}
-
-$("#validate").bind("click", validate);
 
 	</script>
 </body>
