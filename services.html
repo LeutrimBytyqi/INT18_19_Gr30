@@ -4,45 +4,7 @@
 
 	<link rel="stylesheet" href="css/servicesstyle.css">
     <title>Services</title>
-     <script src="js/jquery-3.3.1.js"></script>
-        <script>
-        $(function() {
-
-var width = 720;
-var animationSpeed = 1000;
-var pause = 3000;
-var currentSlide = 1;
-
-var $slider = $('#slider');
-var $slideContainer = $('.slides', $slider);
-var $slides = $('.slide', $slider);
-
-var interval;
-
-function startSlider() {
-    interval = setInterval(function() {
-        $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-            if (++currentSlide === $slides.length) {
-                currentSlide = 1;
-                $slideContainer.css('margin-left', 0);
-            }
-        });
-    }, pause);
-}
-function pauseSlider() {
-    clearInterval(interval);
-}
-
-$slideContainer
-    .on('mouseenter', pauseSlider)
-    .on('mouseleave', startSlider);
-
-startSlider();
-
-
-});
-
-        </script>
+     
 </head>
 
 <body>
@@ -50,7 +12,7 @@ startSlider();
 
     <div id="header">
         <div style="width: 100%;">
-            <div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Cultivated School</a></div>
+            <div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Miami University</a></div>
             <div style="width: 50%; float: right;">
                 <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
                 <div><a class="hyperlink" href="services.html">SERVICES</a></div>
@@ -59,19 +21,108 @@ startSlider();
             </div>
         </div>
     </div>
-    <div style="background-color:rgb(228, 223, 203); height: 400px;">
-    <div>
-            <div id="slider">
-                    <ul class="slides">
-                        <img src="images/miamilogo.png" style="z-index:1;margin-left: 210px; margin-top:90px;position: absolute;width:300px;height: 200px;">
-                        <li class="slide slide1"><img class="foto" src="images/45.jpg"></li>
-                        <li class="slide slide2"><img class="foto" src="images/33.jpg"></li>
-                        <li class="slide slide3"><img class="foto" src="images/34.jpg"></li>
-                        <li class="slide slide4"><img class="foto" src="images/23.jpg"></li>
+  
+      <div class="leftcolumn">
+        <div class="card">
+          <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Academics </h2>
+          <div class="style">  
+          <ul>
+            <li><a href="Miami University 2018-2019 Academic Calendar.html" style="color:black">Miami University 2018-2019 Academics </a> </li>
+            <li><a href="Company.html" style="color:black">Farmer School of Business</a></li>
+            <li><a href="Gallery.html"style="color:black">College of Creative Arts</a></li>
+            <li><a href="Company.html"style="color:black">College of Education, Health and Society</a></li>
+            <li><a href="Gallery.html"style="color:black">Sports,Fitnes,Aquatics and Club Sports</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>           
+       <!--2-->
+        <div class="leftcolumn">
+          <div class="card">
+            <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Living at Miami </h2>
+            <a href="Gallery.html"><img src="images/88.jpg" width="1500" height="600px" title="White flower" alt="Living here"></a>
+            <h3>Enjoy the convenience of living on campus again next year! Room selection for current Second Year and Older students is now open.
+              <a href="https://en.wikipedia.org/wiki/Miami_University"target="_blank">Learn more!</a> </h3>
+            <p><i>Welcome to Miami University Housing!  Through our partnership with the Office of Residence Life, we seek to ensure that your home away from home is safe,
+                comfortable, and clean,and that it supports your education and personal growth. We have an array of housing options on campus to meet the diverse needs and
+                 interests of our students. Miami requires first and second year students to live on campus, and also provides a limited number of spaces for third and fourth year
+                  students each year.
+               From our traditional corridor residence halls to apartment-style living, there is something for everyone.&diams;</i></p>
+               <h2>If you want to see more photos click on this hoto!&#8593;&#8593;</h2>
 
-                    </ul>
-                </div>
-    </div>
-</div>
+          </div>
+
+          <div class="card">
+              <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Box office </h2>            
+              <a href="Gallery.html"><img src="images/90.jpg" width="1500px" height="600px" alt="box office"></a>          
+               <p><b>The Miami University</b>
+                 <i>Box Office serves as the professional ticketing services provider for the greater Miami University
+                    community, providing full service ticketing for the Performing Arts Series, Department of Theatre, 
+                    Department of Music ticketed events, Hamilton Artist Series, Middletown Cultural Arts Series, Lecture Series,
+                     major concerts, and numerous student organizations. As a ticketing partner with the Miami University Athletic Ticket Office,
+                      we are also able to provide tickets to certain Miami Redhawk athletic home games. The Box Office is pleased to offer ticketing services to 
+                      local 
+                      community organizations upon request. The Box Office partners with all promoting organizations to handle admission access
+                   but does not perform booking or artist management duties.&diams;</i></p> 
+                   <h2>If you want to see more photos click on this photo!&#8593;&#8593;</h2>
+                   <h2>Youtube links:</h2>
+                   <ol>
+                    <li style="font-size:25px"><a href="https://www.youtube.com/watch?v=NddzV1Sb-4I" style="color:rgb(15, 15, 15)"target="_blank">Performing Arts Series </a> </li>
+                    <li style="font-size:25px"><a href="https://www.youtube.com/watch?v=a2b4PEyBjIc" style="color:rgb(15, 15, 15)"target="_blank">Department of Music </a> </li>
+                    <li style="font-size:25px"><a href="https://www.youtube.com/watch?v=nMcmjnVzdqs" style="color:rgb(15, 15, 15)"target="_blank">Department of Theatre </a> </li>
+                    <li style="font-size:25px"><a href="https://www.youtube.com/watch?v=nA5oaPRe8Ro" style="color:rgb(15, 15, 15)">Regional Artist Series </a> </li>
+                   </ol>
+          </div>
+        </div>
+        <div class="rightcolumn">
+          <div class="card">
+            <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"></h2style>Dinning</h2>
+            <video width="1500" height="500" controls>
+                <source src="images/videoenisi.mp4" type="video/mp4">
+                
+              </video>
+            <p><i> <b>Miami University</b> Dining Services serves over 20,000 undergraduate and graduate students,
+               staff and faculty on Oxford is the regional campuses. We are proud to have well over 12,000 meal plan holders and are committed 
+              to providing them the highest level of quality and service.Knowing how to behave in company, especially when dining formally, 
+              helps you keep from offending people and shows that you are making an effort to operate within the guidelines of polite society. 
+              It also helps ensure that you come to the end of the meal with the right silverware to eat dessert, which is important.&diams;</i>
+            <big><b>For places to eat click here &rArr;</b></big><a href="placetoeat.html" target="_blank" style="color:black"><b>PLACES TO EAT</b></a></p>
+          </div>
+
+          <div class="card">
+            <div class="mouse">
+              <p><strong>Please fill these requirements!</strong></p>
+
+              First name:<br>
+              <input type="text" name="firstname">
+              <br>
+              Last name:<br>
+             
+              <input type="text" name="lastname">
+              <h3>Do you have any sugestion?</h3>
+              <textarea rows="4" cols="50"> </textarea><p>
+               <form><h3>What do you think is important to study there?</h3>
+                <form>
+                  <input type="checkbox" name="yes_no" value="in"> Intelligent<br>
+                  <input type="checkbox" name="yes_no" value="tal"> Talent<br>
+                  <input type="checkbox" name="yes_no" value="hard"> Hardwork<br><br>
+                 
+                </form>
+                
+              <h3>Do you recomanded this University?</h3>
+                  <input type="radio" name="yes_no">yes</input>  
+                  <input type="radio" name="yes_no">No</input>
+                </form>
+                <br>
+                <h3>For more information visit our FACEBOOK page</h3>
+                <button onclick="window.location.href = 'https://www.facebook.com/MiamiUniversity/';" target="_blank">FACEBOOK.com</button> 
+          </div>
+        </div>
+
+      <div class="footer">
+        <h2>&#169;2018 Miami University. All rights reserved.</h2>
+      </div>
+          
 </body>
 </html>
