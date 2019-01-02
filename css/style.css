@@ -67,26 +67,21 @@ footer{background-color: rgb(51,0,0);
 	display: -webkit-inline-box;
 }
 .tabela1{
-	background-color: rgb(100, 25, 25);
-	margin-left: 3%;
-	padding-top: 21px;
-	padding-bottom: 87px;
+	margin-left: -5%;
+	padding-top: 137px;
+	padding-bottom: 0px;
 	padding-left: 96px;
 	padding-right: 95px;
 }	
 .tabela2{
-	margin-left: 32%;
-	background-color: rgb(100, 25, 25);
-	padding-top: 21px;
-	padding-bottom: 87px;
-	padding-left: 99px;
+	margin-left: 12%;
+	padding-top: 132px;
+	padding-bottom: 0px;
 	padding-right: 95px;
 }	
 .tabela3{
-	margin-left: 131%;
-	background-color: rgb(100, 25, 25);
-	padding-top: 40px;
-	padding-bottom: 69px;
+	margin-left: 2%;
+	padding-top: 130px;
 	padding-left: 99px;
 	padding-right: 95px;
 }
@@ -94,6 +89,7 @@ footer{background-color: rgb(51,0,0);
 	width: 88%;
 	height: 9%;
 	padding-top: 15%;
+	margin-top: -4px;
 	margin-right: 6%;
 	margin-left: 6%;
 	background-color: white;
