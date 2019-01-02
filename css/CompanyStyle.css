@@ -123,3 +123,32 @@
   width: 97%; 
   height: 100%;
 }
+#lastfix{
+  width: 97%;
+  height: 400px;
+}
+#colonat{
+  float: left;
+  width: 42%;
+  height: 100%;
+}
+.photo{
+  width: 290px;
+  height: 201px;
+  margin-left: 1px;
+  float: left;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.scroll{
+  overflow: auto;
+}
+footer{
+  margin-top: 2px;
+  background-color: rgb(51,0,0);
+  color: rgb(193, 193, 193);
+  font-family: sans-serif;
+  height: 45px;
+  font-size: small;
+}
