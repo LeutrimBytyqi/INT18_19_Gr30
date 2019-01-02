@@ -1,224 +1,234 @@
 <!DOCTYPE html>
 <html>
 <head>
-
     <link rel="stylesheet" href="css/Gallerystyle.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
     <title>Gallery</title>
-     <script src="js/jquery-3.3.1.js"></script>
-        <script>
-        $(function() {
-var width = 720;
-var animationSpeed = 1000;
-var pause = 3000;
-var currentSlide = 1;
+    <script src="js/jquery-3.3.1.js"></script>
+<script>
+    $(function() {
+    var width = 720;
+    var animationSpeed = 1000;
+    var pause = 3000;
+    var currentSlide = 1;
 
-var $slider = $('#slider');
-var $slideContainer = $('.slides', $slider);
-var $slides = $('.slide', $slider);
+    var $slider = $('#slider');
+    var $slideContainer = $('.slides', $slider);
+    var $slides = $('.slide', $slider);
 
-var interval;
+    var interval;
 
-function startSlider() {
+    function startSlider() {
     interval = setInterval(function() {
-        $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
-            if (++currentSlide === $slides.length) {
-                currentSlide = 1;
-                $slideContainer.css('margin-left', 0);
-            }
-        });
+    $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+    if (++currentSlide === $slides.length) {
+    currentSlide = 1;
+    $slideContainer.css('margin-left', 0);
+    }
+    });
     }, pause);
-}
-function pauseSlider() {
+    }
+    function pauseSlider() {
     clearInterval(interval);
-}
-$slideContainer
+    }
+    $slideContainer
     .on('mouseenter', pauseSlider)
     .on('mouseleave', startSlider);
-startSlider();
-});
+    startSlider();
+    });
 </script>
 <script> 
-     $(document).ready(function(){
-     $("#tt1").click(function(){
+    $(document).ready(function(){
+    $("#tt1").click(function(){
     $("#hiden1").slideToggle("slow");
     });
-});
+    });
 </script>
 <script> 
     $(document).ready(function(){
     $("#tt2").click(function(){
-   $("#hiden2").slideToggle("slow");
-   });
-});
+    $("#hiden2").slideToggle("slow");
+    });
+    });
 </script>
 <script> 
     $(document).ready(function(){
     $("#tt3").click(function(){
-   $("#hiden3").slideToggle("slow");
-   });
-});
+    $("#hiden3").slideToggle("slow");
+    });
+    });
 </script>
 <script> 
     $(document).ready(function(){
     $("#tt4").click(function(){
-   $("#hiden4").slideToggle("slow");
-   });
-});
+    $("#hiden4").slideToggle("slow");
+    });
+    });
 </script>
 <script> 
     $(document).ready(function(){
     $("#tt5").click(function(){
-   $("#hiden5").slideToggle("slow");
-   });
-});
+    $("#hiden5").slideToggle("slow");
+    });
+    });
 </script>
 <script> 
     $(document).ready(function(){
     $("#tt6").click(function(){
-   $("#hiden6").slideToggle("slow");
-   });
-});
+    $("#hiden6").slideToggle("slow");
+    });
+    });
 </script>
 </head>
-
 <body>
-
     <div id="header">
-        <div style="width: 100%;">
-            <div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Cultivated School</a></div>
-            <div style="width: 50%; float: right;">
-                <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
-                <div><a class="hyperlink" href="services.html">SERVICES</a></div>
-                <div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
-                <div><a class="hyperlink" href="Gallery.html" style="color: rgb(106, 121, 128);">GALLERY</a></div>
-            </div>
-        </div>
+    <div style="width: 100%;">
+    <div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Cultivated School</a></div>
+    <div style="width: 50%; float: right;">
+    <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
+    <div><a class="hyperlink" href="services.html">SERVICES</a></div>
+    <div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
+    <div><a class="hyperlink" href="Gallery.html" style="color: rgb(106, 121, 128);">GALLERY</a></div>
+    </div>
+    </div>
     </div>
     <div style="background-color:rgb(141, 25, 25);width: 100%;height: 100%;">
-            <div class="container">
-                <br>
-                <br>
-            <div id="slider">
-                    <ul class="slides">
-                        <img src="images/miamilogo.png" style="z-index:1;margin-left: 210px; margin-top:60px;position: absolute;width:300px;height: 200px;"> 
-                        <li class="slide slide1"><img class="foto" src="images/1.jpg"></li>
-                        <li class="slide slide2"><img class="foto" src="images/2.jpg"></li>
-                        <li class="slide slide3"><img class="foto" src="images/3.jpg"></li>
-                        <li class="slide slide4"><img class="foto" src="images/4.jpg"></li>
-                        <li class="slide slide5"><img class="foto" src="images/5.jpg"></li>
-                        <li class="slide slide1"><img class="foto" src="images/6.jpg"></li>
-                        <li class="slide slide1"><img class="foto" src="images/7.jpg"></li>
-                        <li class="slide slide1"><img class="foto" src="images/8.jpg"></li>
-                        <li class="slide slide1"><img class="foto" src="images/9.jpg"></li>
-                        <li class="slide slide1"><img class="foto" src="images/1.jpg"></li>
-                    </ul>
-                </div>
-                <br>
-                <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
-                <div id="box">
-                <h2 id="ttt">Take a quick tour of our University throw our Gallery webpage</h2>
-                </div>
-                <span id="tt1"><h3 class="texti">Campus</h3></span>
-                <div id="hiden1">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                   <a href="images/c1.jpg" data-lightbox="mygallery"><img src="images/c1.jpg" alt="Campus"></a>
-                   <a href="images/c2.jpg" data-lightbox="mygallery"><img src="images/c2.jpg"></a>
-                    <a href="images/c3.jpg" data-lightbox="mygallery"><img src="images/c3.jpg"></a>
-                    <a href="images/c4.jpg" data-lightbox="mygallery"><img src="images/c4.jpg"></a>
-                    <a href="images/c5.jpg" data-lightbox="mygallery"><img src="images/c5.jpg"></a>
-                    <a href="images/c6.jpg" data-lightbox="mygallery"><img src="images/c6.jpg"></a>
-                    <a href="images/c7.jpg" data-lightbox="mygallery"><img src="images/c7.jpg"></a>
-                    <a href="images/c8.jpg" data-lightbox="mygallery"><img src="images/c8.jpg"></a>
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                </div>
-                <span id="tt2"><h3 class="texti">Classes</h3></span>
-                <div id="hiden2">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                    <a href="images/cl1.jpg" data-lightbox="mygallery"><img src="images/cl1.jpg"></a>
-                    <a href="images/cl2.jpeg" data-lightbox="mygallery"><img src="images/cl2.jpeg"></a>
-                     <a href="images/cl3.jpg" data-lightbox="mygallery"><img src="images/cl3.jpg"></a>
-                     <a href="images/cl4.jpg" data-lightbox="mygallery"><img src="images/cl4.jpg"></a>
-                     <a href="images/cl5.jpg" data-lightbox="mygallery"><img src="images/cl5.jpg"></a>
-                     <a href="images/cl6.jpg" data-lightbox="mygallery"><img src="images/cl6.jpg"></a>
-                     <a href="images/cl7.png" data-lightbox="mygallery"><img src="images/cl7.png"></a>
-                     <a href="images/cl8.jpg" data-lightbox="mygallery"><img src="images/cl8.jpg"></a>
-                     <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                </div>
-                <span id="tt3"><h3 class="texti">Frat Houses</h3></span>
-                <div id="hiden3">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                    <a href="images/f1.jpg" data-lightbox="mygallery"><img src="images/f1.jpg"></a>
-                    <a href="images/f2.jpg" data-lightbox="mygallery"><img src="images/f2.jpg"></a>
-                     <a href="images/f3.jpg" data-lightbox="mygallery"><img src="images/f3.jpg"></a>
-                     <a href="images/f4.jpg" data-lightbox="mygallery"><img src="images/f4.jpg"></a>
-                     <a href="images/f5.jpg" data-lightbox="mygallery"><img src="images/f5.jpg"></a>
-                     <a href="images/f6.jpg" data-lightbox="mygallery"><img src="images/f6.jpg"></a>
-                     <a href="images/f7.jpg" data-lightbox="mygallery"><img src="images/f7.jpg"></a>
-                     <a href="images/f8.jpg" data-lightbox="mygallery"><img src="images/f8.jpg"></a>
-                     <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                </div>
-                <span id="tt4"><h3 class="texti">Sports Areas</h3></span>
-                <div id="hiden4">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                    <a href="images/s1.jpg" data-lightbox="mygallery"><img src="images/s1.jpg"></a>
-                    <a href="images/s2.jpg" data-lightbox="mygallery"><img src="images/s2.jpg"></a>
-                     <a href="images/s3.jpg" data-lightbox="mygallery"><img src="images/s3.jpg"></a>
-                     <a href="images/s4.jpg" data-lightbox="mygallery"><img src="images/s4.jpg"></a>
-                     <a href="images/s5.png" data-lightbox="mygallery"><img src="images/s5.png"></a>
-                     <a href="images/s6.jpg" data-lightbox="mygallery"><img src="images/s6.jpg"></a>
-                     <a href="images/s7.jpg" data-lightbox="mygallery"><img src="images/s7.jpg"></a>
-                     <a href="images/s8.jpg" data-lightbox="mygallery"><img src="images/s8.jpg"></a>
-                     <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                </div>
-                <span id="tt5"><h3 class="texti">Events</h3></span>
-                <div id="hiden5">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                    <a href="images/e1.jpg" data-lightbox="mygallery"><img src="images/e1.jpg"></a>
-                    <a href="images/e2.jpg" data-lightbox="mygallery"><img src="images/e2.jpg"></a>
-                     <a href="images/e3.jpg" data-lightbox="mygallery"><img src="images/3.jpg"></a>
-                     <a href="images/e4.jpg" data-lightbox="mygallery"><img src="images/e4.jpg"></a>
-                     <a href="images/e5.jpeg" data-lightbox="mygallery"><img src="images/e5.jpeg"></a>
-                     <a href="images/e6.jpg" data-lightbox="mygallery"><img src="images/e6.jpg"></a>
-                     <a href="images/e7.jpg" data-lightbox="mygallery"><img src="images/e7.jpg"></a>
-                     <a href="images/e8.jpg" data-lightbox="mygallery"><img src="images/e8.jpg"></a>
-                     <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                </div>
-                <span id="tt6"><h3 class="texti">Libraries</h3></span>
-                <div id="hiden6">
-                    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
-                    <a href="images/l1.jpg" data-lightbox="mygallery"><img src="images/l1.jpg"></a>
-                    <a href="images/l2.jpg" data-lightbox="mygallery"><img src="images/l2.jpg"></a>
-                     <a href="images/l3.jpg" data-lightbox="mygallery"><img src="images/l3.jpg"></a>
-                     <a href="images/l4.jpg" data-lightbox="mygallery"><img src="images/l4.jpg"></a>
-                     <a href="images/l5.jpg" data-lightbox="mygallery"><img src="images/l5.jpg"></a>
-                     <a href="images/l6.jpg" data-lightbox="mygallery"><img src="images/l6.jpg"></a>
-                     <a href="images/l7.jpg" data-lightbox="mygallery"><img src="images/l7.jpg"></a>
-                     <a href="images/l8.jpg" data-lightbox="mygallery"><img src="images/l8.jpg"></a>
-                </div>
-                <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
-                <div style="margin-left:50px;font-family: sans-serif; color:#404a4a;">
-                    <h3>Our campus includes</h3>
-                    <hr style="width:300px;margin-left: -20px;">
-                    <ol style="margin-left:-40px" type="I">
-                        <li>Libraies</li>
-                        <ul style="list-style-type:square">
-                        <li>King Library</li> 
-                        <li>B.E.S.T. Library</li>
-                        <li>Wertz Art & Architecture Library</li>
-                         <li>Amos Music Library</li>
-                        </ul>
-                        <li>Lecture Halls</li>
-                        <li>Residence Halls</li>
-                        <li>Student Centers</li>
-                        <li>Dining Halls</li>
-                    </ol>
-                </div>
-                <a href="#header" style="margin-left:100px;"><u><b><i>Top</i></b></a></div>
-
-                
+    <div class="container">
+    <br>
+    <br>
+    <div id="slider">
+    <ul class="slides">
+    <img src="images/miamilogo.png" style="z-index:1;margin-left: 210px; margin-top:60px;position: absolute;width:300px;height: 200px;"> 
+    <li class="slide slide1"><img class="foto" src="images/1.jpg"></li>
+    <li class="slide slide2"><img class="foto" src="images/2.jpg"></li>
+    <li class="slide slide3"><img class="foto" src="images/3.jpg"></li>
+    <li class="slide slide4"><img class="foto" src="images/4.jpg"></li>
+    <li class="slide slide5"><img class="foto" src="images/5.jpg"></li>
+    <li class="slide slide1"><img class="foto" src="images/6.jpg"></li>
+    <li class="slide slide1"><img class="foto" src="images/7.jpg"></li>
+    <li class="slide slide1"><img class="foto" src="images/8.jpg"></li>
+    <li class="slide slide1"><img class="foto" src="images/9.jpg"></li>
+    <li class="slide slide1"><img class="foto" src="images/1.jpg"></li>
+    </ul>
     </div>
-</div>
+    <br>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
+    <div id="box">
+    <h2 id="ttt">Take a quick tour of our University throw our Gallery webpage</h2>
+    </div>
+    <span id="tt1"><h3 class="texti">Campus</h3></span>
+    <div id="hiden1">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/c1.jpg" data-lightbox="mygallery"><img src="images/c1.jpg" alt="Campus"></a>
+    <a href="images/c2.jpg" data-lightbox="mygallery"><img src="images/c2.jpg"></a>
+    <a href="images/c3.jpg" data-lightbox="mygallery"><img src="images/c3.jpg"></a>
+    <a href="images/c4.jpg" data-lightbox="mygallery"><img src="images/c4.jpg"></a>
+    <a href="images/c5.jpg" data-lightbox="mygallery"><img src="images/c5.jpg"></a>
+    <a href="images/c6.jpg" data-lightbox="mygallery"><img src="images/c6.jpg"></a>
+    <a href="images/c7.jpg" data-lightbox="mygallery"><img src="images/c7.jpg"></a>
+    <a href="images/c8.jpg" data-lightbox="mygallery"><img src="images/c8.jpg"></a>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    </div>
+    <span id="tt2"><h3 class="texti">Classes</h3></span>
+    <div id="hiden2">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/cl1.jpg" data-lightbox="mygallery"><img src="images/cl1.jpg"></a>
+    <a href="images/cl2.jpeg" data-lightbox="mygallery"><img src="images/cl2.jpeg"></a>
+    <a href="images/cl3.jpg" data-lightbox="mygallery"><img src="images/cl3.jpg"></a>
+    <a href="images/cl4.jpg" data-lightbox="mygallery"><img src="images/cl4.jpg"></a>
+    <a href="images/cl5.jpg" data-lightbox="mygallery"><img src="images/cl5.jpg"></a>
+    <a href="images/cl6.jpg" data-lightbox="mygallery"><img src="images/cl6.jpg"></a>
+    <a href="images/cl7.png" data-lightbox="mygallery"><img src="images/cl7.png"></a>
+    <a href="images/cl8.jpg" data-lightbox="mygallery"><img src="images/cl8.jpg"></a>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    </div>
+    <span id="tt3"><h3 class="texti">Frat Houses</h3></span>
+    <div id="hiden3">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/f1.jpg" data-lightbox="mygallery"><img src="images/f1.jpg"></a>
+    <a href="images/f2.jpg" data-lightbox="mygallery"><img src="images/f2.jpg"></a>
+    <a href="images/f3.jpg" data-lightbox="mygallery"><img src="images/f3.jpg"></a>
+    <a href="images/f4.jpg" data-lightbox="mygallery"><img src="images/f4.jpg"></a>
+    <a href="images/f5.jpg" data-lightbox="mygallery"><img src="images/f5.jpg"></a>
+    <a href="images/f6.jpg" data-lightbox="mygallery"><img src="images/f6.jpg"></a>
+    <a href="images/f7.jpg" data-lightbox="mygallery"><img src="images/f7.jpg"></a>
+    <a href="images/f8.jpg" data-lightbox="mygallery"><img src="images/f8.jpg"></a>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    </div>
+    <span id="tt4"><h3 class="texti">Sports Areas</h3></span>
+    <div id="hiden4">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/s1.jpg" data-lightbox="mygallery"><img src="images/s1.jpg"></a>
+    <a href="images/s2.jpg" data-lightbox="mygallery"><img src="images/s2.jpg"></a>
+    <a href="images/s3.jpg" data-lightbox="mygallery"><img src="images/s3.jpg"></a>
+    <a href="images/s4.jpg" data-lightbox="mygallery"><img src="images/s4.jpg"></a>
+    <a href="images/s5.png" data-lightbox="mygallery"><img src="images/s5.png"></a>
+    <a href="images/s6.jpg" data-lightbox="mygallery"><img src="images/s6.jpg"></a>
+    <a href="images/s7.jpg" data-lightbox="mygallery"><img src="images/s7.jpg"></a>
+    <a href="images/s8.jpg" data-lightbox="mygallery"><img src="images/s8.jpg"></a>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    </div>
+    <span id="tt5"><h3 class="texti">Events</h3></span>
+    <div id="hiden5">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/e1.jpg" data-lightbox="mygallery"><img src="images/e1.jpg"></a>
+    <a href="images/e2.jpg" data-lightbox="mygallery"><img src="images/e2.jpg"></a>
+    <a href="images/e3.jpg" data-lightbox="mygallery"><img src="images/3.jpg"></a>
+    <a href="images/e4.jpg" data-lightbox="mygallery"><img src="images/e4.jpg"></a>
+    <a href="images/e5.jpeg" data-lightbox="mygallery"><img src="images/e5.jpeg"></a>
+    <a href="images/e6.jpg" data-lightbox="mygallery"><img src="images/e6.jpg"></a>
+    <a href="images/e7.jpg" data-lightbox="mygallery"><img src="images/e7.jpg"></a>
+    <a href="images/e8.jpg" data-lightbox="mygallery"><img src="images/e8.jpg"></a>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    </div>
+    <span id="tt6"><h3 class="texti">Libraries</h3></span>
+    <div id="hiden6">
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 100%;">
+    <a href="images/l1.jpg" data-lightbox="mygallery"><img src="images/l1.jpg"></a>
+    <a href="images/l2.jpg" data-lightbox="mygallery"><img src="images/l2.jpg"></a>
+    <a href="images/l3.jpg" data-lightbox="mygallery"><img src="images/l3.jpg"></a>
+    <a href="images/l4.jpg" data-lightbox="mygallery"><img src="images/l4.jpg"></a>
+    <a href="images/l5.jpg" data-lightbox="mygallery"><img src="images/l5.jpg"></a>
+    <a href="images/l6.jpg" data-lightbox="mygallery"><img src="images/l6.jpg"></a>
+    <a href="images/l7.jpg" data-lightbox="mygallery"><img src="images/l7.jpg"></a>
+    <a href="images/l8.jpg" data-lightbox="mygallery"><img src="images/l8.jpg"></a>
+    </div>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
+    <div style="margin-left:200px;font-family: sans-serif; color:#404a4a;">
+    <h3>Our campus includes</h3>
+    <hr style="width:300px;margin-left: -20px;">
+    <ol style="margin-left:-40px" type="I">
+    <li>Libraies</li>
+    <ul style="list-style-type:square">
+    <li>King Library</li> 
+    <li>B.E.S.T. Library</li>
+    <li>Wertz Art & Architecture Library</li>
+    <li>Amos Music Library</li>
+    </ul>
+    <li>Lecture Halls</li>
+    <li>Residence Halls</li>
+    <li>Student Centers</li>
+    <li>Dining Halls</li>
+    </ol>
+    </div>
+    <hr style="background-color:rgb(141, 25, 25);height: 3px;width: 80%;">
+    <div>
+    <h3 style="margin-left:370px;font-family: sans-serif; color:#404a4a;" id="box2">Take a peak of our students work</h3>
+    <p  style="margin-left:420px;font-family: sans-serif; color:#404a4a;">Move mouse over the black box</p>
+    <canvas></canvas>
+    <script src="js/canvasgallery.js"></script>
+    </div>
+    <a href="#header" style="margin-left:100px;"><u><b><i>Top</i></b></a></div>
+    </div>
+    </div>
+<footer>
+    <div style="float: left;margin-left: 20px;margin-top: 15px;">				
+    Copyright &#169; 2019 Domain Name - All rights Reserved
+    </div>
+    <div style="float: right; margin-right: 20px; margin-top: 15px;">
+    Template by OS Templates
+    </div>			
+</footer>
 </body>
 </html>
