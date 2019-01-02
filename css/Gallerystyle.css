@@ -169,3 +169,8 @@
     width: 720px;
     height: 400px
 }
+canvas{
+    margin-left: 130px;
+    background-color: black;
+    border: 1px solid black;
+}
