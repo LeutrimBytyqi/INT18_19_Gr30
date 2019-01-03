@@ -6,10 +6,11 @@
       color: white;
      }
  .logo{
-        font-size: 35px;  
-        font-family: Sans-serif;
-        margin-top: 20px;
-        margin-left: 10px;}
+        font-size: 40px;  
+  font-family: Sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;
+}
  .hyperlink{
         font-size: 20px;
         float:left;
