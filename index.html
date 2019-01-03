@@ -13,27 +13,33 @@
 
 	<div id="header">
 		<div style="width: 100%;">
-		<div style="width: 50%;float: left; margin-top: 20px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";> Miami University</a></div>
+		<div style="width: 50%;float: left; margin-top: 10px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";>Miami University</a></div>
 			<div style="width: 50%; float: right;">
 				<div><a class="hyperlink" href="Company.html">COMPANY</a></div>
 				<div><a class="hyperlink" href="services.html">SERVICES</a></div>
 				<div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
 				<div><a class="hyperlink" href="Gallery.html">GALLERY</a></div>
 			</div>
-		</div>
+		</div>	
 	</div>
 
 		
 		
 	<div id="pjesa2">
-		<div style="margin-left:20px;color: rgb(227, 227, 227); width: 35%; font-size:40px;">Public Institution, Personal Education.</div>
+		<div class="school">Public Institution, Personal Education.</div>
 		<div style="float: right;margin-right: 10px;margin-top: -75px;">
 		<table>
 			<tr>
-				<td>95x95px</td><td>95x95px</td><td>95x95px</td><td>95x95px</td>
+				<td><a><img src="images/a2.png"></a></td>
+				<td><a><img src="images/images.jpeg"></a></td>
+				<td><a><img src="images/images.jpg"></a></td>
+				<td><a><img src="images/a.jpeg"></a></td>
 			</tr>
 			<tr>
-				<td>95x95px</td><td>95x95px</td><td>95x95px</td><td>95x95px</td>
+				<td><a><img src="images/b.jpeg"></a></td>
+				<td><a><img src="images/c3.jpg"></a></td>
+				<td><a><img src="images/a1.jpeg"></a></td>
+				<td><a><img src="images/download.png"></a></td>
 			</tr>
 		</table>
 	
@@ -112,15 +118,15 @@
 			<br>
 			<br>
 			<br>
-			<input class="fund" type="text" name="emri" id="notnull" min="1">
+			<input class="fund" type="text" name="emri">
 			<input class="fund" type="text" name="email" id="email">
 			<br>
 			<div class="fund" style="margin-left: 10px;">
 				Message:
 				<br>
 				<textarea style="width: 98%; height: 100px;"></textarea>
-				<button type="submit" value="submit" id="validate" onclick="nullFunction()">Submit</button>
-				<button type="reset" value="reset" style="margin-left: 10px;">Reset</button>
+				<button type="submit" value="submit" id="validate">Submit</button>
+				<button type="reset" value="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
 				<p id="result"></p>
 				<p id="erorr_message"></p>
 			</div>
@@ -162,7 +168,8 @@
 			<hr style="width:70%;float: left;margin-top: -4px;margin-left: 10px;">	
 			<br>
 			<div class="fund1" >
-				“Strive for progress, not perfection.” 
+				“Strive 
+				for progress, not perfection.” 
 				“Failure is the opportunxity to begin again more intelligently.”
 				“Our greatest weakness lies in giving up. The most certain way to succeed 
 				is always to try just one more time.” 
@@ -170,7 +177,7 @@
 			</div>	
 		</div>
 		<div style="width: 65%; height: 15%; float: left; margin-right: 15px; padding-left: 80px; padding-top: 10px;">
-			<label class="fund" style="background-color: rgb(228, 223, 203);width: 50px; padding-top: 3px; padding-bottom: 5px;padding-right: 10px; padding-left: 10px;">Enter your Email to join our mailing list >>
+			<label class="fund">Enter your Email to join our mailing list >>
 			</label>
 			<input type="text" name="Email" id="email_join" style="width: 400px; height: 21px; margin-left: 10px;">
 			<button style="width: 40px; height: 27px; margin-left:10px;" onclick="setSession()" id="setSession">GO</button>
@@ -221,6 +228,19 @@
         return re.test(email);
       }
 
+      function clickCounter() {
+		  if (typeof(Storage) !== "undefined") {
+		    if (sessionStorage.clickcount) {
+		      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+		    } else {
+		      sessionStorage.clickcount = 1;
+		    }
+		    document.getElementById("result").innerHTML = "Keni klikuar " + sessionStorage.clickcount + " here butonin reset.";
+		  } else {
+		    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+		  }
+		}
+
       function validate() {
         var $result = $("#result");
         var email = $("#email").val();
@@ -237,14 +257,6 @@
 
       $("#validate").bind("click", validate);
 
-      function nullFunction(){
-      	if (document.getElementById("notnull").validity.rangeUnderflow){
-      		document.getElementById("erorr_message")innerHTML = "afavasc";
-      	} else {
-			document.getElementById("erorr_message")innerHTML = "blablalba";
-      	}
-
-      }
 
 	</script>
 </body>
