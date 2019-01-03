@@ -100,6 +100,8 @@ font-size: 40px;
 	display: -webkit-inline-box;
 }
 .teksti{
+	width: 265px;
+	height: 223px;
 	color: black;
 }
 .listat{ 
