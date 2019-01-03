@@ -29,13 +29,7 @@
     margin-left: 110px; 
     outline: double;
  }
- #box2{
-     width:300px;
-    padding: 10px;
-    border: 5px solid rgb(141, 25, 25) ;
-    outline: double;
- }
- #ttt{
+ .ttt{
     text-align: center;
     color:#404a4a;
     font-family: sans-serif;
