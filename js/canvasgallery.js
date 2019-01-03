@@ -52,7 +52,7 @@ function Circle(x,y,dx,dy,radius){
         this.x += this.dx;
         this.y += this.dy;
 
-      if ((mouse.x-370) - this.x < 50 && (mouse.x-370) - this.x > -50 && (mouse.y-300) - this.y < 50 && (mouse.y-300) - this.y > -50 ){
+      if ((mouse.x-370) - this.x < 50 && (mouse.x-370) - this.x > -50 && (mouse.y - 280) - this.y < 50 && (mouse.y-280) - this.y > -50 ){
         if(this.radius<maxRadius){
         this.radius +=1;
         }
