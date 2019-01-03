@@ -7,7 +7,7 @@
     color: white;
    }
 .logo{
-  font-size: 35px;  
+ font-size: 40px;  
   font-family: Sans-serif;
   margin-top: 20px;
   margin-left: 10px;}
@@ -140,6 +140,7 @@
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 0px;
+  background-image: linear-gradient(white, lightblue);
 }
 .scroll{
   overflow: auto;
