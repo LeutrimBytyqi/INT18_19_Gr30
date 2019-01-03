@@ -1,0 +1,90 @@
+ 
+div.partneret{
+        background-color:rgb(214, 207, 180);
+        float:right;
+        width:25%;
+        height: 500px;
+        border: 2px solid black;
+    }
+    
+body{
+        width:1345px;
+       background-color: rgb(228, 223, 203)
+        padding: 0;
+        margin: 0;
+        border: 3px solid #38495c;
+        background-color:rgb(228, 223, 203);
+    }
+    
+.pjesaesiperme {
+  
+  text-align: center;
+  width:1339px;
+  height:170px;
+  display: block;
+  margin:auto;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #111;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none; 
+    position: absolute;  //Nese e hjekim atehere kur e ofrojna mausin deformohet
+    border: 2px solid #38495c;
+  
+ }
+
+
+.dropdown-content a {
+    color: white;
+    background-color: rgb(228, 223, 203);
+   display: block; //Per ti radhitur njera pas tjetres
+    text-align: left;
+    border: 2px solid  #006666;
+    
+}
+
+.dropdown-content a:hover {
+    background-color:#111;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;   //Nese nuk eshte kjo atehere dropdown opsionet nuk dalin fare
+}
