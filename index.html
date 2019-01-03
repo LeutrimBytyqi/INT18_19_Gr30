@@ -128,7 +128,7 @@
 				<br>
 				<textarea style="width: 98%; height: 100px;"></textarea>
 				<button type="submit" value="submit" id="validate">Submit</button>
-				<button type="reset" value="reset" style="margin-left: 10px;">Reset</button>
+				<button type="reset" value="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
 				<p id="result"></p>
 				<p id="erorr_message"></p>
 			</div>
@@ -228,6 +228,19 @@
         var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
         return re.test(email);
       }
+
+      function clickCounter() {
+		  if (typeof(Storage) !== "undefined") {
+		    if (sessionStorage.clickcount) {
+		      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+		    } else {
+		      sessionStorage.clickcount = 1;
+		    }
+		    document.getElementById("result").innerHTML = "Keni klikuar " + sessionStorage.clickcount + " here butonin reset.";
+		  } else {
+		    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+		  }
+		}
 
       function validate() {
         var $result = $("#result");
