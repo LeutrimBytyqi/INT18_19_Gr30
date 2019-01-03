@@ -10,10 +10,11 @@
 
    
 .logo{
-	font-size: 35px;	
-	font-family: Sans-serif;
-	margin-top: 20px;
-	margin-left: 10px;
+font-size: 40px;  
+  font-family: Sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;
+
 }
 
 .hyperlink{
@@ -24,6 +25,7 @@
 	color: hsl(0, 0%, 85%);
 	text-decoration: none;
 }
+
 .animation{
   width: 100px;
   height: 100px;
