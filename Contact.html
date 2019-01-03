@@ -3,6 +3,82 @@
 <head>
 	<title>Contact | Cultivated School</title>
 	 <link rel="stylesheet" href="css/contactStyle.css">
+	 <script type="text/javascript">
+      function check(){
+      
+        var name=document.getElementById('name').value;
+        var telephone=document.getElementById('telephone').value;
+        var email=document.getElementById('email').value;
+        var subject=document.getElementById('subject').value;
+        var message=document.getElementById('message').value;
+
+        
+
+        if(name == ""){
+          document.getElementById('fillname').innerHTML="* Please fill the name";
+          document.getElementById('name').focus();
+          return false;
+        }
+        else{
+        	document.getElementById('fillname').innerHTML="";
+          document.getElementById('telephone').focus();
+        }
+
+          if(telephone == ""){
+          document.getElementById('filltelephone').innerHTML="* Please fill the telephone number";
+          return false;
+        }
+        else{
+        	document.getElementById('filltelephone').innerHTML="";
+          document.getElementById('email').focus();}
+         
+          if(email == ""){
+          document.getElementById('fillemail').innerHTML="* Please fill the e-mail";
+          return false;
+        }
+        else{
+        	document.getElementById('fillemail').innerHTML="";
+          document.getElementById('subject').focus();
+        }
+          if(subject == ""){
+          document.getElementById('fillsubject').innerHTML="* Please fill the subject";
+          return false;
+        }
+        else{
+        	document.getElementById('fillsubject').innerHTML="";
+          document.getElementById('message').focus();
+        }
+          if(message == ""){
+          document.getElementById('fillmessage').innerHTML="* Please fill the message";
+          return false;
+        }
+        else{
+        	document.getElementById('fillmessage').innerHTML="";
+          document.getElementById('name').focus();
+
+        }
+
+      
+        $("#myform")[0].reset();
+      }
+
+      function save(){
+        var nameInput=document.getElementById('name').value;
+        var telephoneInput=document.getElementById('telephone').value;
+        var emailInput=document.getElementById('email').value;
+        var subjectInput=document.getElementById('subject').value;
+        var messageInput=document.getElementById('message').value;
+
+
+        localStorage.setItem('text', nameInput);
+        localStorage.setItem('text', telephoneInput);
+        localStorage.setItem('text', emailInput);
+        localStorage.setItem('text', subjectInput);
+        localStorage.setItem('text', messageInput);
+
+      }
+      
+    </script>
 </head>
 <body>
 	<div id="header">
@@ -68,6 +144,43 @@
 			    	
 
     </div>
+     <fieldset style="margin: none;">
+        <form id="myform" action="#" onsubmit="return check()" >
+        <div class="left-div"><h1>Message us</h1>
+
+        <label>Name</label><br>
+        <input type="text" id="name" placeholder="Enter name" autocomplete="off"><br>
+        <span id="fillname"></span><br>
+        <label>Telephone</label><br>
+        <input type="text" id="telephone" placeholder="Enter telephone number" autocomplete="off"><br>
+        <span id="filltelephone" ></span><br>
+        <label>E-mail</label><br>
+        <input type="text" id="email" placeholder="Enter e-mail" autocomplete="off"><br>
+        <span id="fillemail" ></span><br>
+        <label>Subject</label><br>
+        <input type="text" id="subject" placeholder="Enter subject" autocomplete="off"><br>
+        <span id="fillsubject" ></span><br>
+        <label>Message</label><br>
+        <textarea type="text" id="message" rows="5" placeholder="Enter message"></textarea><br>
+        <span id="fillmessage" ></span><br>
+        <button onclick="save()" type="submit" name="submit" >Submit</button>
+      </form>
+       
+        </div>
+        
+        
+
+
+        <div class="right-div">
+          <h1>Thank you,<br>
+           for messaging us!
+              </h1>
+        </div>
+
+        
+
+      </fieldset>
+
     <footer>
 			<div style="float: left;margin-left: 20px;margin-top: 15px;">				
 				Copyright &#169; 2013 Domain Name - All rights Reserved
@@ -76,6 +189,7 @@
 					Template by OS Templates
 			</div>			
 		</footer>
+
 
 </body>
 </html>
