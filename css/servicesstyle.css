@@ -1,6 +1,6 @@
 #header{
 	background-color: rgb(141, 25, 25);
- 	margin-top: 5px;
+ 	margin-top: 0px;
   	height: 80px;
    	color: white;
    }
@@ -25,8 +25,21 @@
 	text-decoration: none;
 }
 .hyperlink:hover{
-    color: rgb(106, 121, 128);
-   }
+	color: black;
+	text-decoration: overline;
+	 
+	 }
+ .sticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
+
+.sticky +.content {
+		padding-top: 60px;
+	}
+	    
    
     {
 	box-sizing: border-box;
@@ -92,8 +105,17 @@
 	}
 	.mouse{
 		font-size:20px;
+		width: 50%;
+		height: 100%;
+		float: left;
 	}
   
+.mouse_djatht{
+		width: 48%;
+		float: right;
+		height: 100%;
+	}
+
   .footer {
 	padding: 25px;
 	color:white;

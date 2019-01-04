@@ -14,10 +14,10 @@
         <div style="width: 100%;">
             <div style="width: 50%;float: left; margin-top: 10px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";>Miami University</a></div>
             <div style="width: 50%; float: right;">
-                <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
-                <div><a class="hyperlink" href="services.html">SERVICES</a></div>
-                <div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
-                <div><a class="hyperlink" href="Gallery.html">GALLERY</a></div>
+                <div><a class="hyperlink" href="Company.html" href="javascript:void(0)">COMPANY</a></div>
+                <div><a class="hyperlink" href="services.html" href="javascript:void(0)" style="color: black;text-decoration: overline;">SERVICES</a></div>
+                <div><a class="hyperlink" href="Contact.html" href="javascript:void(0)">CONTACT</a></div>
+                <div><a class="hyperlink" href="Gallery.html" href="javascript:void(0)">GALLERY</a></div>
             </div>
         </div>
     </div>
@@ -39,7 +39,7 @@
     </div>           
        <!--2-->
         <div class="leftcolumn">
-          <div class="card">
+          <div class="card" style="height: 900px;">
             <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Living at Miami </h2>
             <a href="Gallery.html"><img src="images/88.jpg" width="100%" height="600px" title="White flower" alt="Living here"></a>
             <h3>Enjoy the convenience of living on campus again next year! Room selection for current Second Year and Older students is now open.
@@ -53,7 +53,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" style="height:1040px;">
               <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Box office </h2>            
               <a href="Gallery.html"><img src="images/7.jpg" width="100%" height="600px" alt="box office"></a>          
                <p><b>The Miami University</b>
@@ -77,7 +77,7 @@
         </div>
         <div class="rightcolumn">
           <div class="card">
-            <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"></h2style>Dinning</h2>
+            <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"></h2>Dinning</h2>
             <video width="100%" height="500px" controls>
                 <source src="images/videoenisi.mp4" type="video/mp4">
                 
@@ -90,7 +90,7 @@
             <big><b>For places to eat click here &rArr;</b></big><a href="placetoeat.html" target="_blank" style="color:black"><b>PLACES TO EAT</b></a></p>
           </div>
 
-          <div class="card">
+          <div class="card" style="height: 700px;">
             <div class="mouse">
               <p><strong>Please fill these requirements!</strong></p>
 
@@ -122,11 +122,42 @@
                   <button type="button" onclick="window.location.href ='Contact.html';" >CONTACT </button>
               </span>
           </div>
+          <!-- New -->
+          <div class="mouse_djatht">
+            <h2>Did you knew</h2>
+            <h3>That max value in javascript is <p id="numrimax"></p> and we take that number as infinit</h3><br>
+            <h4>We has the best website in UK</h4><br>
+            <h4>Our website accept ony the best student</h4>
+          </div>
         </div>
 
       <div class="footer">
         <h2>&#169;2019 Miami University. All rights reserved.</h2>
       </div>
+          
+      <script>
+          window.onscroll = function() {myFunction()};
+          
+          var navbar = document.getElementById("header");
+          var sticky = navbar.offsetTop;
+          
+          function myFunction() {
+            if (window.pageYOffset >= sticky) {
+              navbar.classList.add("sticky")
+            } else {
+              navbar.classList.remove("sticky");
+            }
+          }
+          // new
+        function Max(x) {
+          // var x = 100; 
+          // document.getElementById("maxx").innerHTML = x.MAX_VALUE;
+          this.x = x;
+        }
+        var nrmaks = new Max(Number.MAX_VALUE)
+
+        document.getElementById("numrimax").innerHTML = nrmaks.x.toExponential();
+        </script>
           
 </body>
 </html>
