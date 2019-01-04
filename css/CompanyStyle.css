@@ -20,8 +20,10 @@
   text-decoration: none;
 }
 .hyperlink:hover{
-  color: rgb(106, 121, 128);
-}
+  color: black;
+  text-decoration: overline;
+ 
+ }
 .posht{
   font-family:sans-serif;
   font-size: 10pt;
