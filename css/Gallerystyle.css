@@ -31,10 +31,6 @@
     width: 100%;
     z-index: 2;
   }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
  /* per foto*/
  #box{
     width: 800px;
