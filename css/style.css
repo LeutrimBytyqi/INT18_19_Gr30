@@ -49,10 +49,6 @@ font-size: 40px;
     width: 100%;
     z-index: 2;
   }
-  
-  .sticky + .content {
-    padding-top: 60px;
-  }
 .posht{
 	font-family:sans-serif;
 	font-size: 10pt;
