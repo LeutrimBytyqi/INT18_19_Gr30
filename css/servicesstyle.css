@@ -25,12 +25,19 @@
 	text-decoration: none;
 }
 .hyperlink:hover{
+<<<<<<< HEAD
     color: rgb(106, 121, 128);
    }
    
     
 	
 	
+=======
+	color: black;
+	text-decoration: overline;
+ 
+ }
+>>>>>>> aebcdad07366b987089ec796e9db2db5efba6754
 	.style{
 		font-style: oblique;
 		font-size:30px;
@@ -103,6 +110,9 @@
 	margin-left:8%;
 	margin-right:-3%;
 	width:100%;
+  }
+  li:hover{
+  	color: #24c3b5;
   }
   
   
