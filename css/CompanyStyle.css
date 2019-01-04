@@ -78,11 +78,11 @@
   outline: 2px solid #fff;
   padding: 27px 120px;
   display: inline-block;
-  outline-offset: -3vh;
+  outline-offset: -2vh;
   text-decoration: none;
 }
 .calloutButton:hover{
-  outline-offset: -4vh;
+  outline-offset: -3vh;
   transition: all .3s ease;
   color: black;
   outline-color: black;
