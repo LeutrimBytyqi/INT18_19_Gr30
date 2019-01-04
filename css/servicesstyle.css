@@ -5,7 +5,7 @@
    	color: white;
    }
    body {
-		background-color: rgb(134, 3, 3);
+		background-color: rgb(141, 25, 25);
    }
 
    
@@ -28,9 +28,9 @@
     color: rgb(106, 121, 128);
    }
    
-    {
-	box-sizing: border-box;
-	}
+    
+	
+	
 	.style{
 		font-style: oblique;
 		font-size:30px;
