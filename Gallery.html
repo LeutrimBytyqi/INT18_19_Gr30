@@ -86,10 +86,10 @@
     <div style="width: 100%;">
     <div style="width: 50%;float: left; margin-top: 10px; "><a class="logo" style="color:rgb(227, 227, 227);text-decoration: none;" href="index.html";>Miami University</a></div>
     <div style="width: 50%; float: right;">
-    <div><a class="hyperlink" href="Company.html">COMPANY</a></div>
-    <div><a class="hyperlink" href="services.html">SERVICES</a></div>
-    <div><a class="hyperlink" href="Contact.html">CONTACT</a></div>
-    <div><a class="hyperlink" href="Gallery.html" style="color: black;text-decoration: overline;">GALLERY</a></div>
+    <div><a class="hyperlink" href="Company.html" href="javascript:void(0)">COMPANY</a></div>
+    <div><a class="hyperlink" href="services.html" href="javascript:void(0)">SERVICES</a></div>
+    <div><a class="hyperlink" href="Contact.html" href="javascript:void(0)">CONTACT</a></div>
+    <div><a class="hyperlink" href="Gallery.html" href="javascript:void(0)" style="color: black;text-decoration: overline;">GALLERY</a></div>
     </div>
     </div>
     </div>
@@ -99,7 +99,6 @@
     <br>
     <div id="slider">
     <ul class="slides">
-    <img src="images/miamilogo.png" style="z-index:1;margin-left: 210px; margin-top:60px;position: absolute;width:300px;height: 200px;"> 
     <li class="slide slide1"><img class="foto" src="images/1.jpg"></li>
     <li class="slide slide2"><img class="foto" src="images/2.jpg"></li>
     <li class="slide slide3"><img class="foto" src="images/3.jpg"></li>
@@ -250,7 +249,20 @@
     <a href="#header" style="margin-left:100px;"><u><b><i>Top</i></b></a></div>   
     </div>
     </div>
-   
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("header");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
 <footer>
     <div style="float: left;margin-left: 20px;margin-top: 15px;">				
     Copyright &#169; 2019 Domain Name - All rights Reserved
