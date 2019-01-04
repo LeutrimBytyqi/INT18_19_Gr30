@@ -258,20 +258,18 @@
     <a href="#header" class="fillimi"><u><b><i>Top</i></b></a>
     </div>
     </div>
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("header");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-        </script>
+<script>
+    window.onscroll = function() {myFunction()};    
+    var navbar = document.getElementById("header");
+    var sticky = navbar.offsetTop;    
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    } else {
+    navbar.classList.remove("sticky");
+    }
+    }
+</script>
 <footer>
     <div style="float: left;margin-left: 1%;margin-top: 1%;">				
     Copyright &#169; 2019 Domain Name - All rights Reserved

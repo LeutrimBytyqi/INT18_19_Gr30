@@ -58,26 +58,24 @@ a.email:hover{
   font-weight:700;
 }
 
- .right-div{
-      text-align: center;
-      float:right;
-      width:50%;
-      margin-top:10em;
-      margin-right: 3em;
-      color:hsl(0, 0%, 85%);
-      background-color: rgb(100, 25, 25);
-      border-radius:10px;
-    }
+.right-div{
+  text-align: center;
+  float:right;
+  width:50%;
+  margin-top:10em;
+  margin-right: 3em;
+  color:hsl(0, 0%, 85%);
+  background-color: rgb(100, 25, 25);
+  border-radius:10px;
+}
 
 
-
-    .left-div{
-      float:left;
-      width:40%;
-      color: #404a4a;
-      
-    }
-      fieldset button{
+.left-div{
+  float:left;
+  width:40%;
+  color: #404a4a;   
+}
+fieldset button{
   background-color: rgb(100, 25, 25);
   text-align:center;
   height:30px;
@@ -87,30 +85,25 @@ a.email:hover{
   border-radius:5px 5px 5px 5px;
   font-family: serif;
   font-size: 110%;
-
-  }
- fieldset{
+}
+fieldset{
     
-      background-color:rgba(177, 170, 124, 0.84);
-      margin: 0 0 0 0;
-      border-width: 1px;
-     
-    }
-  fieldset input, textarea{
-      margin:5px 0px;
-      width:30em;
-      padding: 5px;
-      font-family:serif;
-      border-radius: 3px;
-      border:none;
-
-    }
+  background-color:rgba(177, 170, 124, 0.84);
+  margin: 0 0 0 0;
+  border-width: 1px;   
+}
+fieldset input, textarea{
+  margin:5px 0px;
+  width:30em;
+  padding: 5px;
+  font-family:serif;
+  border-radius: 3px;
+  border:none;
+}
 h1{
   padding-left: 20px;
   padding-bottom: 0;
   padding-top: 20px;
-
-
 }
 .social{
   font-family: sans-serif;
