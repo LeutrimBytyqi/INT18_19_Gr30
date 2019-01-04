@@ -2,7 +2,7 @@
 
 #header{
   background-color: rgb(141, 25, 25);
-  margin-top: 0px;
+  margin-top: 5px;
     height: 80px;
     color: white;
    }
@@ -29,16 +29,6 @@
   float: right;
   width: 25%;
   margin-top:-14px;
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-}
-
-.sticky + .content {
-  padding-top: 60px;
 }
 
 /*fillimi i div.video*/
@@ -88,11 +78,11 @@
   outline: 2px solid #fff;
   padding: 27px 120px;
   display: inline-block;
-  outline-offset: -10px;
+  outline-offset: -3vh;
   text-decoration: none;
 }
 .calloutButton:hover{
-  outline-offset: -15px;
+  outline-offset: -4vh;
   transition: all .3s ease;
   color: black;
   outline-color: black;
