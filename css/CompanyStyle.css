@@ -154,25 +154,25 @@
 }
 #cube:hover #top{ 
   -webkit-transform: perspective(1000px) translate3d(0,0,-150px) rotate3d(1,0,0,0);
-    z-index:0;
+    z-index:1;
     width: 100%;
     height: 100%;
 }
 #cube:hover #front{ 
-  -webkit-transform: perspective(1000px) translate3d(0,0,-150px) rotate3d(1,0,0,-90deg);
+  -webkit-transform: perspective(1000px) translate3d(0,0,-200px) rotate3d(1,0,0,-90deg);
     z-index:0;
     width: 100%;
     height: 100%;
 }
 #cube #top{ 
-  -webkit-transform: perspective(1000px) translate3d(0,0,-150px) rotate3d(1,0,0,90deg);
+  -webkit-transform: perspective(1000px) translate3d(0,0,-200px) rotate3d(1,0,0,90deg);
     z-index:0;
     width: 100%;
     height: 100%;
 }
 #cube #front{ 
   -webkit-transform: perspective(1000px) translate3d(0,0,-150px) rotate3d(1,0,0,0);
-    z-index:0;
+    z-index:1;
     width: 100%;
     height: 100%;
 }
