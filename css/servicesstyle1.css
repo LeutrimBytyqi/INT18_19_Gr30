@@ -1,6 +1,6 @@
 #header{
 	background-color: rgb(141, 25, 25);
- 	margin-top: 5px;
+ 	margin-top: 0px;
   	height: 80px;
    	color: white;
    }
@@ -15,7 +15,16 @@
 	margin-top: 20px;
 	margin-left: 10px;
 }
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
 
+.sticky + .content {
+	padding-top: 60px;
+}
 .hyperlink{
 	font-size: 20px;
 	float:left;
@@ -24,8 +33,13 @@
 	color: hsl(0, 0%, 85%);
 	text-decoration: none;
 }
+.hyperlink:hover{
+	color: black;
+	text-decoration: overline;
+ 
+ }
 body{
-  background-color:rgb(110, 10, 10);
+  background-color:rgb(141, 25, 25);
 }
 .pjesa3{
 background-color:rgb(228, 223, 203);
