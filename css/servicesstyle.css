@@ -1,19 +1,19 @@
 #header{
 	background-color: rgb(141, 25, 25);
- 	margin-top: 0px;
+ 	margin-top: 5px;
   	height: 80px;
    	color: white;
    }
    body {
-		background-color: rgb(141, 25, 25);
-	 }
-	
+		background-color: rgb(134, 3, 3);
+   }
+
    
 .logo{
-	font-size: 40px;	
-	font-family: Sans-serif;
-	margin-top: 20px;
-	margin-left: 10px;
+	font-size: 40px;  
+  font-family: Sans-serif;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 .hyperlink{
@@ -27,26 +27,49 @@
 .hyperlink:hover{
 	color: black;
 	text-decoration: overline;
- 
- }
+	 
+	 }
  .sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 2;
-}
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 2;
+	}
 
-.sticky + .content {
-	padding-top: 60px;
-}
+.sticky +.content {
+		padding-top: 60px;
+	}
+	    
+   
+    {
+	box-sizing: border-box;
+	}
 	.style{
 		font-style: oblique;
-		font-size:40px;
+		font-size:30px;
 		font-family: Arial, Helvetica, sans-serif;
 		}
+		
+   .column {
+	float: left;
+	padding: 20px;
+	width:20%;
+	margin-top:20px;
+	background-color:rgb(228, 223, 203);
+	
+	
   }
-  
-  
+  .menu {
+	width:30%;
+	background-color:rgb(228, 223, 203);
+
+  }
+  .content{
+	  width: 60%;
+	  font-size:20px;
+		color:rgb(12, 12, 12);
+		background-color:rgb(228, 223, 203);
+  }
   <!--pjesa3-->
 
   {
@@ -58,7 +81,7 @@
   .leftcolumn {   
 	float: left;
 	width: 85%;
-	padding-right:100px;
+	padding-right:0px;
   }
   
   .rightcolumn {
@@ -75,11 +98,24 @@
 	 margin-right: -3%;
   }
   
-  
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+	}
 	.mouse{
 		font-size:20px;
+		width: 50%;
+		height: 100%;
+		float: left;
 	}
   
+.mouse_djatht{
+		width: 48%;
+		float: right;
+		height: 100%;
+	}
+
   .footer {
 	padding: 25px;
 	color:white;
@@ -89,6 +125,9 @@
 	margin-left:8%;
 	margin-right:-3%;
 	width:100%;
+  }
+  li:hover{
+  	color: #24c3b5;
   }
   
   
