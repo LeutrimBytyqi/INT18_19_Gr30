@@ -2,7 +2,7 @@
 
 #header{
   background-color: rgb(141, 25, 25);
-  margin-top: 5px;
+  margin-top: 0px;
     height: 80px;
     color: white;
    }
@@ -30,7 +30,12 @@
   width: 25%;
   margin-top:-14px;
 }
-
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
 /*fillimi i div.video*/
 .section {
   width: 70%;
