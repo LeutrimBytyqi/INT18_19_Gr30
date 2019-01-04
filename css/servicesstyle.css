@@ -1,6 +1,6 @@
 #header{
 	background-color: rgb(141, 25, 25);
- 	margin-top: 5px;
+ 	margin-top: 0px;
   	height: 80px;
    	color: white;
    }
@@ -10,7 +10,7 @@
 	
    
 .logo{
-	font-size: 35px;	
+	font-size: 40px;	
 	font-family: Sans-serif;
 	margin-top: 20px;
 	margin-left: 10px;
@@ -29,6 +29,16 @@
 	text-decoration: overline;
  
  }
+ .sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.sticky + .content {
+	padding-top: 60px;
+}
 	.style{
 		font-style: oblique;
 		font-size:40px;
