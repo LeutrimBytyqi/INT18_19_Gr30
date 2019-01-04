@@ -5,15 +5,15 @@
    	color: white;
    }
    body {
-		background-color: rgb(141, 25, 25);
-   }
-
+		background-color: rgb(134, 3, 3);
+	 }
+	
    
 .logo{
-	font-size: 40px;  
-  font-family: Sans-serif;
-  margin-top: 20px;
-  margin-left: 10px;
+	font-size: 35px;	
+	font-family: Sans-serif;
+	margin-top: 20px;
+	margin-left: 10px;
 }
 
 .hyperlink{
@@ -25,45 +25,20 @@
 	text-decoration: none;
 }
 .hyperlink:hover{
-<<<<<<< HEAD
     color: rgb(106, 121, 128);
    }
    
-    
-	
-	
-=======
-	color: black;
-	text-decoration: overline;
- 
- }
->>>>>>> aebcdad07366b987089ec796e9db2db5efba6754
+    {
+	box-sizing: border-box;
+	}
 	.style{
 		font-style: oblique;
-		font-size:30px;
+		font-size:40px;
 		font-family: Arial, Helvetica, sans-serif;
 		}
-		
-   .column {
-	float: left;
-	padding: 20px;
-	width:20%;
-	margin-top:20px;
-	background-color:rgb(228, 223, 203);
-	
-	
   }
-  .menu {
-	width:30%;
-	background-color:rgb(228, 223, 203);
-
-  }
-  .content{
-	  width: 60%;
-	  font-size:20px;
-		color:rgb(12, 12, 12);
-		background-color:rgb(228, 223, 203);
-  }
+  
+  
   <!--pjesa3-->
 
   {
@@ -75,7 +50,7 @@
   .leftcolumn {   
 	float: left;
 	width: 85%;
-	padding-right:0px;
+	padding-right:100px;
   }
   
   .rightcolumn {
@@ -92,11 +67,7 @@
 	 margin-right: -3%;
   }
   
-  .row:after {
-	content: "";
-	display: table;
-	clear: both;
-	}
+  
 	.mouse{
 		font-size:20px;
 	}
@@ -110,9 +81,6 @@
 	margin-left:8%;
 	margin-right:-3%;
 	width:100%;
-  }
-  li:hover{
-  	color: #24c3b5;
   }
   
   
