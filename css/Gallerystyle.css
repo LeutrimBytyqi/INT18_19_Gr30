@@ -4,6 +4,7 @@
     margin-top: 0px;
       height: 80px;
       color: white;
+
      }
  .logo{
         font-size: 40px;  
@@ -211,4 +212,23 @@ font-size: 20px;
         column-count: 3;
         column-gap: 20px;
         column-rule:5px outset rgb(141, 25, 25);
+}
+h4{
+  font-family: sans-serif;
+  color: #404a4a;
+  font-weight:100px;
+
+
+}
+div.thegame{
+
+  float: right;
+  margin-right: 50%;
+
+}
+.fillimi{
+  margin-left: 100px;
+  text-decoration: none;
+  color: currentColor;
+
 }
