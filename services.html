@@ -39,7 +39,7 @@
     </div>           
        <!--2-->
         <div class="leftcolumn">
-          <div class="card">
+          <div class="card" style="height: 900px;">
             <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Living at Miami </h2>
             <a href="Gallery.html"><img src="images/88.jpg" width="100%" height="600px" title="White flower" alt="Living here"></a>
             <h3>Enjoy the convenience of living on campus again next year! Room selection for current Second Year and Older students is now open.
@@ -53,7 +53,7 @@
 
           </div>
 
-          <div class="card">
+          <div class="card" style="height:1040px;">
               <h2 style="color:rgb(48, 4, 4);font-size:35px;text-align: center"> Box office </h2>            
               <a href="Gallery.html"><img src="images/7.jpg" width="100%" height="600px" alt="box office"></a>          
                <p><b>The Miami University</b>
@@ -90,7 +90,7 @@
             <big><b>For places to eat click here &rArr;</b></big><a href="placetoeat.html" target="_blank" style="color:black"><b>PLACES TO EAT</b></a></p>
           </div>
 
-          <div class="card">
+          <div class="card" style="height: 700px;">
             <div class="mouse">
               <p><strong>Please fill these requirements!</strong></p>
 
@@ -122,8 +122,20 @@
                   <button type="button" onclick="window.location.href ='Contact.html';" >CONTACT </button>
               </span>
           </div>
+          <!-- New -->
+          <div class="mouse_djatht">
+            <h2>Did you knew</h2>
+            <h3>That max value in javascript is <p id="numrimax"></p> and we take that number as infinit</h3><br>
+            <h4>We has the best website in UK</h4><br>
+            <h4>Our website accept ony the best student</h4>
+          </div>
         </div>
-        <script>
+
+      <div class="footer">
+        <h2>&#169;2019 Miami University. All rights reserved.</h2>
+      </div>
+          
+      <script>
           window.onscroll = function() {myFunction()};
           
           var navbar = document.getElementById("header");
@@ -136,11 +148,16 @@
               navbar.classList.remove("sticky");
             }
           }
-          </script>
+          // new
+        function Max(x) {
+          // var x = 100; 
+          // document.getElementById("maxx").innerHTML = x.MAX_VALUE;
+          this.x = x;
+        }
+        var nrmaks = new Max(Number.MAX_VALUE)
 
-      <div class="footer">
-        <h2>&#169;2019 Miami University. All rights reserved.</h2>
-      </div>
+        document.getElementById("numrimax").innerHTML = nrmaks.x.toExponential();
+        </script>
           
 </body>
 </html>
