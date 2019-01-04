@@ -209,22 +209,4 @@ font-size: 20px;
         column-gap: 20px;
         column-rule:5px outset rgb(141, 25, 25);
 }
-#grad1{
-    margin-top: -20px;
-    width:21%;
-    height:610px;
-    background: -webkit-linear-gradient(red,blue);
-}
-.gradi{
-    color: blue;
-    margin-left: 48%;
-    font-family: Impact;
-    font-size: 20px;
-}
-.gradi2{
-    color: red;
-    margin-left: 48%;
-    font-family: Impact;
-    font-size: 20px;
-}
 
