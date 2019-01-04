@@ -2,7 +2,7 @@
 
 #header{
   background-color: rgb(141, 25, 25);
-  margin-top: 5px;
+  margin-top: 0px;
     height: 80px;
     color: white;
    }
@@ -30,6 +30,16 @@
   float: right;
   width: 25%;
   margin-top:-14px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.sticky + .content {
+  padding-top: 60px;
 }
 
 /*fillimi i div.video*/
