@@ -41,6 +41,7 @@
     border: 5px solid rgb(141, 25, 25) ;
     margin-left: 110px; 
     outline: double;
+    border-radius: 15px;
  }
  .ttt{
     text-align: center;
@@ -202,4 +203,12 @@ height: 90px;
 width: 90px;
 text-align: center;
 font-size: 20px;
+}
+#histo{
+    margin: 5%;
+    -webkit-column-count: 3;
+        -webkit-column-gap:20px;
+        column-count: 3;
+        column-gap: 20px;
+        column-rule:5px outset rgb(141, 25, 25);
 }
