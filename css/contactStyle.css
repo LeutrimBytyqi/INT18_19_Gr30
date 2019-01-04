@@ -116,7 +116,13 @@ h1{
 
 
 }
-
+.social{
+  font-family: sans-serif;
+  color: rgb(106, 121, 128);
+  font-size: x-large;
+  text-align: center;
+  margin-top: 30px;
+}
 
 
 
