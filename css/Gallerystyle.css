@@ -213,22 +213,3 @@ font-size: 20px;
         column-gap: 20px;
         column-rule:5px outset rgb(141, 25, 25);
 }
-h4{
-  font-family: sans-serif;
-  color: #404a4a;
-  font-weight:100px;
-
-
-}
-div.thegame{
-
-  float: right;
-  margin-right: 50%;
-
-}
-.fillimi{
-  margin-left: 100px;
-  text-decoration: none;
-  color: currentColor;
-
-}
