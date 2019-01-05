@@ -119,15 +119,17 @@
 			<br>
 			<br>
 			<br>
-			<input class="fund" type="text" name="emri"  placeholder="Write your name" autocomplete="off">
-			<input class="fund" type="text" name="email" id="email"  placeholder="Write your email" autocomplete="off">
-			<br>
-			<div class="fund" style="margin-left: 10px;">
-				Message:
+			<form id="myFrom">
+				<input class="fund" type="text" name="emri"  placeholder="Write your name" autocomplete="off">
+				<input class="fund" type="text" name="email" id="email"  placeholder="Write your email" autocomplete="off">
+				<br>
+				<div class="fund" style="margin-left: 10px;">
+					Message:
 				<br>
 				<textarea style="width: 98%; height: 100px;"  placeholder="What's on your mind?" autocomplete="off"></textarea>
 				<button type="submit" value="submit" id="validate" onclick="validate()">Submit</button>
 				<button type="reset" value="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
+			</form>
 				<p id="result"></p>
 				<p id="erorr_message"></p>
 			</div>
@@ -233,6 +235,7 @@
 		  if (typeof(Storage) !== "undefined") {
 		    if (sessionStorage.clickcount) {
 		      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+		      document.getElementById("myForm").reset();
 		    } else {
 		      sessionStorage.clickcount = 1;
 		    }
