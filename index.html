@@ -4,8 +4,9 @@
 	<title>Miami University</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	
 </head>
-<body >
+<body>
 
 	<div id="header">
 		<div style="width: 100%;">
@@ -127,7 +128,7 @@
 				<br>
 				<textarea style="width: 98%; height: 100px;"  placeholder="What's on your mind?" autocomplete="off"></textarea>
 				<button type="submit" value="submit" id="validate">Submit</button>
-				<button type="reset" value="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
+				<button type="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
 				<p id="result"></p>
 				<p id="erorr_message"></p>
 			</div>
@@ -163,7 +164,7 @@
 			to reach their potential.”
 
 			</div>	
-		</div>
+		</div>x
 		<div style="width: 22%;float: left;margin-left: -10px;">
 			<h2 class="fund">You can win it </h2>		
 			<hr style="width:70%;float: left;margin-top: -4px;margin-left: 10px;">	
@@ -194,6 +195,7 @@
 			</div>			
 		</footer>
 	<script>
+
 		if (typeof(Storage) !== "undefined") {
 		  document.getElementById("email_join").value = localStorage.getItem("emailJoin");
 		} else {
@@ -240,6 +242,7 @@
 		  } else {
 		    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 		  }
+
 		}
 
       function validate() {
@@ -248,7 +251,7 @@
         $result.text("");
 
         if (validateEmail(email)) {
-
+        	alert("Thank you for texting us, we will answer!")
         } else {
           $result.text(email + " is not valid");
           $result.css("color", "red");
@@ -258,9 +261,6 @@
 
       $("#validate").bind("click", validate);
 
-
-	</script>
-	 <script>
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("header");
@@ -272,7 +272,9 @@
           } else {
             navbar.classList.remove("sticky");
           }
-        }
+        };
+
+        
         </script>
 </body>
 </html>
