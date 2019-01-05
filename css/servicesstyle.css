@@ -108,14 +108,16 @@
 	}
 
   .footer {
-	padding: 25px;
+	padding: 10px;
 	color:white;
 	text-align: center;
 	background: rgb(78, 9, 9);
-	margin-top: 0%;
-	margin-left:8%;
-	margin-right:-3%;
-	width:100%;
+	
+	margin-left:14.8%;
+	margin-top: 0;
+	width:86.6%;
+	border-radius: 5px;
+
   }
   li:hover{
   	color: #24c3b5;
