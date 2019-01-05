@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html manifest="manifest.appcache">
 <head>
 	<title>Miami University</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	
 </head>
-<body>
+<body >
 
 	<div id="header">
 		<div style="width: 100%;">
@@ -60,7 +59,7 @@
 			</span>
 
 			<span class="tabela3">
-				<img src="images/3.jpg" style="width: 260px; height: 125px;">
+				<img src="images/3.jpg" style="width: 260px; height: 125px;margin-top: -130px;float: right;margin-right: 20px;">
 			</span>			
 		</div>
 		<div id="permbajtja">
@@ -76,7 +75,7 @@
 					<li class="listat">Patricia gallagher newberry</li>
 				</ul>
 			</div>
-			<div class="teksti" style="margin-top: -215px; margin-left: 17%;">
+			<div class="teksti" style="margin-top: -215px; margin-left: 12%;">
 				<h3 style="">Department of Media</h3>
 				<hr style="width:100%;float: left; margin-top: -4px;">
 				<pre class="listat" style="margin-left: -330px;">
@@ -89,7 +88,7 @@
 					high-quality media content.
 					</pre>
 			</div>
-			<div class="teksti" style="margin-top: -215px; margin-left: 18%;">
+			<div class="teksti" style="margin-top: -215px; margin-left: 205px;">
 				<h3 style="">King Library</h3>
 				<hr style="width:100%;float: left; margin-top: -4px;">
 				<pre class="listat" style="margin-left: -313px; margin-top: 30px; font-size: 14px;">
@@ -127,8 +126,8 @@
 				Message:
 				<br>
 				<textarea style="width: 98%; height: 100px;"  placeholder="What's on your mind?" autocomplete="off"></textarea>
-				<button type="submit" value="submit" id="validate">Submit</button>
-				<button type="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
+				<button type="submit" value="submit" id="validate" onclick="validate()">Submit</button>
+				<button type="reset" value="reset" style="margin-left: 10px;" onclick="clickCounter()">Reset</button>
 				<p id="result"></p>
 				<p id="erorr_message"></p>
 			</div>
@@ -164,7 +163,7 @@
 			to reach their potential.”
 
 			</div>	
-		</div>x
+		</div>
 		<div style="width: 22%;float: left;margin-left: -10px;">
 			<h2 class="fund">You can win it </h2>		
 			<hr style="width:70%;float: left;margin-top: -4px;margin-left: 10px;">	
@@ -195,7 +194,6 @@
 			</div>			
 		</footer>
 	<script>
-
 		if (typeof(Storage) !== "undefined") {
 		  document.getElementById("email_join").value = localStorage.getItem("emailJoin");
 		} else {
@@ -242,7 +240,6 @@
 		  } else {
 		    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 		  }
-
 		}
 
       function validate() {
@@ -251,7 +248,7 @@
         $result.text("");
 
         if (validateEmail(email)) {
-        	alert("Thank you for texting us, we will answer!")
+        	alert("Thank you for texting us, we will answer soon!")
         } else {
           $result.text(email + " is not valid");
           $result.css("color", "red");
@@ -260,7 +257,6 @@
       }
 
       $("#validate").bind("click", validate);
-
         window.onscroll = function() {myFunction()};
         
         var navbar = document.getElementById("header");
@@ -272,9 +268,7 @@
           } else {
             navbar.classList.remove("sticky");
           }
-        };
-
-        
+        }
         </script>
 </body>
 </html>
