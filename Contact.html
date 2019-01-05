@@ -104,7 +104,7 @@
     	<div class="text">
     		<h1>Contact</h1>
     		<strong>
-    			Miami University
+    			Cultivatet School
     		</strong>
     		<br>
     		<br>
@@ -179,8 +179,30 @@
            for messaging us!
               </h1>
         </div>
+        <div class="posta">
+          <canvas id="mycanvas" width="200" height="120"  style="border:3px solid #c3c3c3;
+          margin-left: 24%;
+          margin-top: 80px;">
+              Canvas nuk perkrahet nga browseri juaj.
+          </canvas>  
+          <script>
 
-        
+            var c = document.getElementById("mycanvas");
+            var ctx = c.getContext("2d");
+            
+            ctx.font = "Arial 20px";
+            ctx.fillStyle ="#FFEEFF";
+           
+            ctx.moveTo(0,0);
+            ctx.lineTo(100,50);  
+            ctx.lineTo(200,0); 
+            ctx.stroke(); 
+            ctx.strokeText("To: Miami School",10,100);
+            ctx.strokeText("Miami",10,110);
+            
+            
+          </script>
+        </div>
 
       </fieldset>
       <script>
